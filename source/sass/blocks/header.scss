@@ -1,0 +1,31 @@
+.header {
+  background-color: $bg-header;
+}
+
+.header__wrraper {
+  position: relative;
+  display: grid;
+  padding: 15px 15px 13px;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: dense;
+  gap: 16px 5px;
+}
+
+.header__menu {
+  grid-column: 1;
+}
+
+.header__logo {
+  grid-column: 2;
+}
+
+
+.header__tel {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  color: $color-white;
+  grid-column: 2;
+  text-align: right;
+  letter-spacing: 1.3px;
+}
