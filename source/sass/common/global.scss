@@ -16,7 +16,7 @@ a {
 html {
   min-width: 320px;
   min-height: 100%;
-  font-family: $font-family;
+  font-family: $font-400;
   font-size: 14px;
   line-height: 22px;
   color: $color-basic;
@@ -29,6 +29,7 @@ html {
   flex-direction: column;
   min-height: 100%;
   margin: 0;
+  min-width: 320px;
 }
 
 .page-main {

@@ -1,18 +1,28 @@
 .site-list {
   list-style: none;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .site-list__link {
+  font-family: $font-700;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 14px;
   color: $color-white;
-  letter-spacing: 2.1px;
+  letter-spacing: 0.9px;
   text-transform: uppercase;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
+    letter-spacing: 0.64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-family: $font-400;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
   }
 }

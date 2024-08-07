@@ -6,10 +6,18 @@
   mask-repeat: no-repeat;
   mask-position: center;
   background-color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .menu__burger-checkbox:checked + .menu__burger {
   mask-image: url("/__spritemap#sprite-cross-view");
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .menu-list {
@@ -24,10 +32,31 @@
   transform: translateX(-100%);
   transition: 0.3s;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    top: 82px;
+    padding: 28px 45px 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    transform: translateX(0%);
+    display: flex;
+    gap: 30px;
+    padding: 0;
+  }
 }
 
 .menu-item {
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .menu__burger-checkbox:checked ~ .menu-list {
