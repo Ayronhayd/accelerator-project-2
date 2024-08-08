@@ -24,13 +24,11 @@
   top: 85px;
   left: 0;
   position: absolute;
-  display: block;
   padding: 26px 9px 32px;
   margin: 0;
   background: $bg-header;
   list-style: none;
-  transform: translateX(-100%);
-  transition: 0.3s;
+  display: none;
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -40,7 +38,6 @@
 
   @media (min-width: $desktop-width) {
     position: static;
-    transform: translateX(0%);
     display: flex;
     gap: 19px;
     padding: 0;
@@ -60,5 +57,9 @@
 }
 
 .menu__burger-checkbox:checked ~ .menu-list {
-  transform: translateX(0);
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
