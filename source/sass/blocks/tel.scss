@@ -14,4 +14,23 @@
     font-size: 18px;
     line-height: 18px;
   }
+
+  &:hover {
+    opacity: 50%;
+  }
+
+  &:focus {
+    color: $color-basic;
+    outline: none;
+  }
+
+  &:active {
+    color: $button-extra;
+    border: 1px solid transparent;
+  }
+
+  &--disabled {
+    color: $color-disabled;
+    pointer-events: none;
+  }
 }

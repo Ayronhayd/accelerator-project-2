@@ -25,7 +25,7 @@
   left: 0;
   position: absolute;
   display: block;
-  padding: 26px 15px 32px;
+  padding: 26px 9px 32px;
   margin: 0;
   background: $bg-header;
   list-style: none;
@@ -35,14 +35,14 @@
 
   @media (min-width: $tablet-width) {
     top: 82px;
-    padding: 28px 45px 46px;
+    padding: 28px 39px 46px;
   }
 
   @media (min-width: $desktop-width) {
     position: static;
     transform: translateX(0%);
     display: flex;
-    gap: 30px;
+    gap: 19px;
     padding: 0;
   }
 }
