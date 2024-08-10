@@ -9,4 +9,27 @@
   color: $color-white;
   text-align: center;
   display: block;
+
+  &:hover {
+    color: $button-extra;
+    border-color: $button-extra;
+    background-color: $color-white;
+  }
+
+  &:focus {
+    color: $button-extra;
+    border-color: transparent;
+    background-color: $color-white;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $button-extra;
+    color: $color-white;
+  }
+
+  &--disabled {
+    background-color: $color-disabled;
+    pointer-events: none;
+  }
 }
