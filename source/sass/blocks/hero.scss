@@ -11,10 +11,6 @@
   width: 100%;
 }
 
-.hero__swiper {
-  display: block;
-}
-
 .hero__slide {
   background-color: $bg-header;
   text-align: center;
@@ -27,6 +23,10 @@
     &--card {
       padding: 137px 78px 197px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 200px 120px 80px;
   }
 
   h3 {
@@ -47,6 +47,8 @@
       font-size: 77px;
       line-height: 77px;
       text-align: left;
+      max-width: 944px;
+      margin: 0 0 23px;
     }
   }
 
@@ -67,6 +69,8 @@
 
     @media (min-width: $desktop-width) {
       text-align: left;
+      padding: 0;
+      max-width: 470px;
     }
   }
 }
@@ -75,13 +79,9 @@
   padding: 20px 20px 18px;
   width: 180px;
   margin: 0 auto 76px;
-}
-
-.hero__info {
-  display: none;
 
   @media (min-width: $desktop-width) {
-    display: block;
+    margin: 0;
   }
 }
 
@@ -94,6 +94,11 @@
   @media (min-width: $tablet-width) {
     left: calc(50% - 54px);
   }
+
+  @media (min-width: $desktop-width) {
+    left: calc(88% - 51px);
+    bottom: 92px;
+  }
 }
 
 .hero__img-card-wrapper {
@@ -101,12 +106,18 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    margin: -31px auto 0;
-    width: 442px;
+    position: absolute;
+    bottom: calc(-19% - 10px);
+    left: calc(50% - 221px);
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: calc(19% - 4px);
+    left: calc(63% + 3px);
   }
 }
 
-.hero__img-card-1 {
+.hero__img-1 {
   @media (min-width: $tablet-width) {
     width: 266px;
     height: 351px;
@@ -121,10 +132,20 @@
 
 .hero__img-card-2 {
   @media (min-width: $tablet-width) {
-    width: 236px;
-    height: 312px;
     margin-left: -60px;
     margin-top: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -175px;
+    margin-top: 93px;
+  }
+}
+
+.hero__img-2 {
+  @media (min-width: $tablet-width) {
+    width: 236px;
+    height: 312px;
   }
 
   @media (min-width: $desktop-width) {
@@ -137,4 +158,50 @@
   display: flex;
   gap: 12px;
   justify-content: center;
+}
+
+.hero__info-list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-top: 134px;
+    gap: 10px;
+  }
+}
+
+.hero__info-item {
+  @media (min-width: $desktop-width) {
+    font-family: $font-400;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: $color-white;
+    border: 1px solid rgba($color-white, 0.5);
+    position: relative;
+    padding: 14px 20px 12px 38px;
+  }
+}
+
+.hero__info-item::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: calc(50% - 7px);
+  left: 19px;
+  width: 13px;
+  height: 12px;
+  mask-repeat: no-repeat;
+  background-color: $color-white;
+}
+
+.hero__duration::after {
+  mask-image: url("/__spritemap#sprite-moon-view");
+}
+
+.hero__problem::after {
+  mask-image: url("/__spritemap#sprite-level-view");
 }
