@@ -1,11 +1,25 @@
-.hero__swiper {
+.hero__img {
   width: 100%;
-  height: 100%;
+  display: block;
+}
+
+.hero__img-content {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.hero__swiper {
+  display: block;
 }
 
 .hero__slide {
   background-color: $bg-header;
   text-align: center;
+  position: relative;
+  padding: 145px 15px 39px;
 
   h3 {
     font-family: $font-800;
@@ -13,6 +27,8 @@
     font-weight: 800;
     line-height: 26px;
     color: $color-white;
+    margin: 0;
+    margin-bottom: 15px;
 
     @media (min-width: $tablet-width) {
       font-size: 56px;
@@ -32,6 +48,8 @@
     font-weight: 400;
     line-height: 20px;
     color: $color-white;
+    margin: 0;
+    margin-bottom: 59px;
 
     @media (min-width: $tablet-width) {
       font-size: 17px;
@@ -44,14 +62,11 @@
   }
 }
 
-// .hero__button {
-//   display: block;
-// }
-
-// .hero__pagination {
-//   // d
-// }
-
+.hero__button {
+  padding: 20px 20px 18px;
+  width: 180px;
+  margin: 0 auto 76px;
+}
 
 .hero__info {
   display: none;
@@ -59,4 +74,29 @@
   @media (min-width: $desktop-width) {
     display: block;
   }
+}
+
+.hero__pagination-wrapper {
+  position: absolute;
+  left: calc(50% - 48px);
+  bottom: 40px;
+  z-index: 1;
+}
+
+.hero__pagination {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $color-white;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $color-white;
 }
