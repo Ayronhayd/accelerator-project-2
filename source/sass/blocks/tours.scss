@@ -1,13 +1,40 @@
 .tours {
   position: relative;
+  padding-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 123px 120px;
+  }
 }
 
 .tours__title {
-  margin: 39px 15px 14px;
+  margin: 0;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
 }
 
-.tours__swiper {
+.tours__swiper.swiper {
   width: 290px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .tours__wrapper {
@@ -36,6 +63,14 @@
   width: 290px;
   height: 100%;
   object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 330px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 380px;
+  }
 }
 
 .tours__card-wrapper-1 {
@@ -44,11 +79,22 @@
   font-weight: 500;
   line-height: 12px;
   color: $color-white;
-  display: flex;
   margin-bottom: 16px;
-  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
   row-gap: 12px;
-  min-width: 260px;
+  flex-wrap: wrap;
+
+
+  @media (min-width: $tablet-width) {
+    min-width: 290px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 339px;
+  }
 }
 
 .tours__pin-filled,
@@ -62,25 +108,33 @@
   background-color: $button;
   padding: 8px 13px 8px 34px;
   align-self: flex-start;
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+  }
 }
 
 .tours__duration {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  gap: 13px;
   flex-wrap: wrap;
-  row-gap: 12px;
+  display: flex;
+  align-items: center;
+  gap: 14px 13px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }
 
 .tours__sun {
-  padding: 8px 0 0 37px;
+  padding: 0 0 0 37px;
 }
 
 
 .tours__moon {
-  padding: 8px 0 0 33px;
+  padding: 0 0 0 33px;
 }
 
 
@@ -127,7 +181,6 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 249px;
 }
 
 .tours__card-title {

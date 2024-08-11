@@ -32,17 +32,25 @@ swiperHero.update();
 const swiperTours = new Swiper('.tours__swiper', {
   modules: [Navigation],
   loop: false,
-  slidesPerView: 1,
   spaceBetween: 18,
   navigation: {
     nextEl: '.tours__button-next',
     prevEl: '.tours__button-prev',
   },
 
-  768: {
-    slidesPerView: 2,
-  }
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 30,
 
+    }
+  },
 });
 
 swiperTours.update();
