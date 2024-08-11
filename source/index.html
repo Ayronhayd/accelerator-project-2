@@ -179,7 +179,236 @@
 
 
     <section class="tours" data-test="tours">
-      <h2 class="title" data-shadow="Ближайшие туры">Ближайшие туры</h2>
+      <h2 class="tours__title title" data-shadow="Ближайшие туры">Ближайшие туры</h2>
+      <div class="button-swiper">
+        <button class="tours__button-prev swiper-button" type="button">
+          <span class="visually-hidden">Слайдер-назад</span>
+        </button>
+        <button class="tours__button-next swiper-button" type="button">
+          <span class="visually-hidden">Слайдер-вперед</span>
+        </button>
+      </div>
+
+      <div class="tours__swiper swiper">
+        <ul class="tours__wrapper swiper-wrapper">
+          <li class="tours__slide swiper-slide">
+            <picture>
+              <source type="image/webp" width="380" height="416" media="(min-width: 1440px)"
+                srcset="./img//tours/tours-desctop-1.webp 1x, ./img//tours/tours-desctop-1@2x.webp 2x">
+              <source type="image/webp" width="330" height="416" media="(min-width: 768px)"
+                srcset="./img/tours/tours-tablet-1.webp 1x, ./img/tours/tours-tablet-1@2x.webp 2x">
+              <source type="image/webp" width="290" height="416"
+                srcset="./img/tours/tours-1.webp 1x, ./img/tours/tours-1@2x.webp 2x">
+              <source type="image/jpeg" width="380" height="416" media="(min-width: 1440px)"
+                srcset="./img//tours/tours-desctop-1.jpg 1x, ./img//tours/tours-desctop-1@2x.jpg 2x">
+              <source type="image/jpeg" width="330" height="416" media="(min-width: 768px)"
+                srcset="./img/tours/tours-tablet-1.jpg 1x, ./img/tours/tours-tablet-1@2x.jpg 2x">
+              <img class="tours__img" src="./img/tours/tours-1.jpg" srcset="./img/tours/tours-1@2x.jpg" width="290"
+                height="416" alt="Эльбрус.">
+            </picture>
+
+            <div class="tours__card">
+              <div class="tours__card-wrapper-1">
+                <p class="tours__pin-filled">Кавказ</p>
+                <ul class="tours__duration">
+                  <li class="tours__sun">4 дня</li>
+                  <li class="tours__moon">3 ночи</li>
+                </ul>
+              </div>
+
+              <h3 class="tours__card-title">Путешествие
+                вокруг Эльбруса</h3>
+
+              <div class="tours__card-wrapper-2">
+                <p class="tours__stars">Сложность:
+                  <span class="tours__star">
+                    <span class="full-star"></span>
+                    <span class="full-star"></span>
+                    <span class="full-star"></span>
+                    <span class="full-star"></span>
+                    <span class="empty-star"></span>
+                  </span>
+                </p>
+
+                <p class="tours__data-wrap">
+                  Даты набора:
+                  <span class="tours__data">
+                    <time datetime="12-06">12.06</time>–<time datetime="19-06">19.06</time>
+                  </span>
+                </p>
+
+                <p class="tours__group-wrap">Группа:
+                  <span class="tours__group">до 15 чел.</span>
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="tours__slide swiper-slide">
+            <picture>
+              <source type="image/webp" width="380" height="416" media="(min-width: 1440px)"
+                srcset="./img//tours/tours-desctop-2.webp 1x, ./img//tours/tours-desctop-2@2x.webp 2x">
+              <source type="image/webp" width="330" height="416" media="(min-width: 768px)"
+                srcset="./img/tours/tours-tablet-2.webp 1x, ./img/tours/tours-tablet-2@2x.webp 2x">
+              <source type="image/webp" width="290" height="416"
+                srcset="./img/tours/tours-2.webp 1x, ./img/tours/tours-2@2x.webp 2x">
+              <source type="image/jpeg" width="380" height="416" media="(min-width: 1440px)"
+                srcset="./img//tours/tours-desctop-2.jpg 1x, ./img//tours/tours-desctop-2@2x.jpg 2x">
+              <source type="image/jpeg" width="330" height="416" media="(min-width: 768px)"
+                srcset="./img/tours/tours-tablet-2.jpg 1x, ./img/tours/tours-tablet-2@2x.jpg 2x">
+              <img class="tours__img" src="./img/tours/tours-2.jpg" srcset="./img/tours/tours-2@2x.jpg" width="290"
+                height="416" alt="Путь к подножию
+              Белухи.">
+            </picture>
+
+            <div class="tours__card">
+              <div class="tours__card-wrapper-1">
+                <p class="tours__pin-filled">Алтай</p>
+                <ul class="tours__duration">
+                  <li class="tours__sun">14 дня</li>
+                  <li class="tours__moon">13 ночей</li>
+                </ul>
+              </div>
+
+              <h3 class="tours__card-title">Путь к подножию
+                Белухи</h3>
+
+              <div class="tours__card-wrapper-2">
+                <p class="tours__stars">Сложность:
+                  <span class="tours__star">
+                    <span class="full-star"></span>
+                    <span class="full-star"></span>
+                    <span class="full-star"></span>
+                    <span class="full-star"></span>
+                    <span class="empty-star"></span>
+                  </span>
+                </p>
+
+                <p class="tours__data-wrap">
+                  Даты набора:
+                  <span class="tours__data">
+                    <time datetime="14-06">14.06</time>–<time datetime="23-06">23.06</time>
+                  </span>
+                </p>
+
+                <p class="tours__group-wrap">Группа:
+                  <span class="tours__group">до 25 чел..</span>
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="tours__slide swiper-slide">
+            <picture>
+              <source type="image/webp" width="380" height="416" media="(min-width: 1440px)"
+                srcset="./img//tours/tours-desctop-3.webp 1x, ./img//tours/tours-desctop-3@2x.webp 2x">
+              <source type="image/webp" width="330" height="416" media="(min-width: 768px)"
+                srcset="./img/tours/tours-tablet-3.webp 1x, ./img/tours/tours-tablet-3@2x.webp 2x">
+              <source type="image/webp" width="290" height="416"
+                srcset="./img/tours/tours-3.webp 1x, ./img/tours/tours-3@2x.webp 2x">
+              <source type="image/jpeg" width="380" height="416" media="(min-width: 1440px)"
+                srcset="./img//tours/tours-desctop-3.jpg 1x, ./img//tours/tours-desctop-3@2x.jpg 2x">
+              <source type="image/jpeg" width="330" height="416" media="(min-width: 768px)"
+                srcset="./img/tours/tours-tablet-3.jpg 1x, ./img/tours/tours-tablet-3@2x.jpg 2x">
+              <img class="tours__img" src="./img/tours/tours-3.jpg" srcset="./img/tours/tours-3@2x.jpg" width="290"
+                height="416" alt="Адыгея.">
+            </picture>
+
+            <div class="tours__card">
+              <div class="tours__card-wrapper-1">
+                <p class="tours__pin-filled">Адыгея</p>
+                  <ul class="tours__duration">
+                    <li class="tours__sun">7 дней</li>
+                    <li class="tours__moon">6 ночей</li>
+                  </ul>
+              </div>
+
+              <h3 class="tours__card-title">Через Фишт
+                к Чёрному морю и обратно</h3>
+
+              <div class="tours__card-wrapper-2">
+                <p class="tours__stars">Сложность:
+                  <span class="tours__star">
+                    <span class="full-star"></span>
+                    <span class="full-star"></span>
+                    <span class="full-star"></span>
+                    <span class="full-star"></span>
+                    <span class="empty-star"></span>
+                  </span>
+                </p>
+
+                <p class="tours__data-wrap">
+                  Даты набора:
+                  <span class="tours__data">
+                    <time datetime="15-07">15.07</time>–<time datetime="19-07">19.07</time>
+                  </span>
+                </p>
+
+                <p class="tours__group-wrap">Группа:
+                  <span class="tours__group">до 22 чел.</span>
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="tours__slide swiper-slide">
+            <picture>
+              <source type="image/webp" width="380" height="416" media="(min-width: 1440px)"
+                srcset="./img//tours/tours-desctop-4.webp 1x, ./img//tours/tours-desctop-4@2x.webp 2x">
+              <source type="image/webp" width="330" height="416" media="(min-width: 768px)"
+                srcset="./img/tours/tours-tablet-4.webp 1x, ./img/tours/tours-tablet-4@2x.webp 2x">
+              <source type="image/webp" width="290" height="416"
+                srcset="./img/tours/tours-4.webp 1x, ./img/tours/tours-4@2x.webp 2x">
+              <source type="image/jpeg" width="380" height="416" media="(min-width: 1440px)"
+                srcset="./img//tours/tours-desctop-4.jpg 1x, ./img//tours/tours-desctop-4@2x.jpg 2x">
+              <source type="image/jpeg" width="330" height="416" media="(min-width: 768px)"
+                srcset="./img/tours/tours-tablet-4.jpg 1x, ./img/tours/tours-tablet-4@2x.jpg 2x">
+              <img class="tours__img" src="./img/tours/tours-4.jpg" srcset="./img/tours/tours-4@2x.jpg" width="290"
+                height="416" alt="Урал.">
+            </picture>
+
+            <div class="tours__card">
+              <div class="tours__card-wrapper-1">
+                <p class="tours__pin-filled">Урал</p>
+                <ul class="tours__duration">
+                  <li class="tours__sun">9 дней</li>
+                  <li class="tours__moon">10 ночей</li>
+                </ul>
+              </div>
+
+              <h3 class="tours__card-title">Восхождение
+                Манарага</h3>
+
+              <div class="tours__card-wrapper-2">
+                <p class="tours__stars">Сложность:
+                  <span class="tours__star">
+                    <span class="full-star"></span>
+                    <span class="full-star"></span>
+                    <span class="full-star"></span>
+                    <span class="full-star"></span>
+                    <span class="full-star"></span>
+                  </span>
+                </p>
+
+                <p class="tours__data-wrap">
+                  Даты набора:
+                  <span class="tours__data">
+                    <time datetime="12-07">12.07</time>–<time datetime="19-07">19.07</time>
+                  </span>
+                </p>
+
+                <p class="tours__group-wrap">Группа:
+                  <span class="tours__group">до 7 чел.</span>
+                </p>
+              </div>
+            </div>
+          </li>
+
+
+
+
+        </ul>
+      </div>
     </section>
 
     <section class="training" data-test="training">

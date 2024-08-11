@@ -14,3 +14,77 @@
 .swiper-pagination-bullet-active {
   background-color: $color-white;
 }
+
+.button-swiper {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -10px;
+  }
+}
+
+.swiper-button {
+  width: 37px;
+  height: 35px;
+  border: 1px solid transparent;
+  background-color: $button;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 4px);
+    left: calc(50% - 4px);
+    width: 20px;
+    height: 17px;
+    mask-image: url("/__spritemap#sprite-arrow-view");
+    background-color: $color-white;
+  }
+
+  &:hover {
+    border: 1px solid $button-extra;
+    background-color: $color-white;
+
+    &::after {
+      background-color: $button-extra;
+    }
+  }
+
+  &:focus {
+    border: 1px solid transparent;
+    background-color: $color-white;
+    outline: none;
+
+    &::after {
+      background-color: $button-extra;
+    }
+  }
+
+  &:active {
+    outline: none;
+    background-color: $button-extra;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+}
+
+.tours__button-next {
+  transform: scaleX(-1);
+}
+
+.swiper-button-disabled,
+.swiper-button-disabled:hover,
+.swiper-button-disabled:focus,
+.swiper-button-disabled:active {
+  background-color: $color-disabled;
+  border-color: $color-disabled;
+
+  &::after {
+    background-color: $color-white;
+  }
+}

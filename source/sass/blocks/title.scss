@@ -5,15 +5,37 @@
   line-height: 22px;
   color: $color-basic;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 100%;
+  }
 }
 
 .title[data-shadow]::after {
   content: attr(data-shadow);
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -15px;
+  left: 19px;
+  font-family: $font-800;
+  font-weight: 800;
   font-size: 26px;
   line-height: 26px;
   color: transparent;
-  text-shadow: -20px 0 0 rgba($color-basic, 0.1);
+  text-shadow: -20px 0 0 rgba($color-basic, 0.03);
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 55px;
+    line-height: 55px;
+  }
 }

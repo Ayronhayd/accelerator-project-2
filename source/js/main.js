@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import {Pagination} from 'swiper/modules';
+import {Navigation, Pagination} from 'swiper/modules';
 import 'swiper/css';
 // Navigation,
 // закрытие при нажатии на сылку
@@ -12,7 +12,7 @@ magicLink.forEach((btn) => {
   });
 });
 
-
+// swiper
 const swiperHero = new Swiper('.hero__swiper', {
   modules: [Pagination],
   // Optional parameters
@@ -28,3 +28,21 @@ const swiperHero = new Swiper('.hero__swiper', {
 });
 
 swiperHero.update();
+
+const swiperTours = new Swiper('.tours__swiper', {
+  modules: [Navigation],
+  loop: false,
+  slidesPerView: 1,
+  spaceBetween: 18,
+  navigation: {
+    nextEl: '.tours__button-next',
+    prevEl: '.tours__button-prev',
+  },
+
+  768: {
+    slidesPerView: 2,
+  }
+
+});
+
+swiperTours.update();
