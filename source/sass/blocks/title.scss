@@ -5,6 +5,8 @@
   line-height: 22px;
   color: $color-basic;
   position: relative;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 25px;

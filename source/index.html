@@ -48,7 +48,6 @@
     </div>
   </header>
 
-
   <main class="page-main">
     <h1 class="visually-hidden">Турагентство Lifetour.</h1>
     <section class="hero" data-test="hero">
@@ -177,7 +176,6 @@
       </div>
     </section>
 
-
     <section class="tours container" data-test="tours">
       <h2 class="tours__title title" data-shadow="Ближайшие туры">Ближайшие туры</h2>
       <div class="button-swiper">
@@ -233,7 +231,7 @@
                 <p class="tours__data-wrap">
                   Даты набора:
                   <span class="tours__data">
-                    <time datetime="12-06">12.06</time>–<time datetime="19-06">19.06</time>
+                    <time datetime="06-12">12.06</time>–<time datetime="06-19">19.06</time>
                   </span>
                 </p>
 
@@ -287,7 +285,7 @@
                 <p class="tours__data-wrap">
                   Даты набора:
                   <span class="tours__data">
-                    <time datetime="14-06">14.06</time>–<time datetime="23-06">23.06</time>
+                    <time datetime="06-14">14.06</time>–<time datetime="06-23">23.06</time>
                   </span>
                 </p>
 
@@ -313,10 +311,10 @@
             <div class="tours__card">
               <div class="tours__card-wrapper-1">
                 <p class="tours__pin-filled">Адыгея</p>
-                  <ul class="tours__duration">
-                    <li class="tours__sun">7 дней</li>
-                    <li class="tours__moon">6 ночей</li>
-                  </ul>
+                <ul class="tours__duration">
+                  <li class="tours__sun">7 дней</li>
+                  <li class="tours__moon">6 ночей</li>
+                </ul>
               </div>
 
               <h3 class="tours__card-title">Через Фишт
@@ -336,7 +334,7 @@
                 <p class="tours__data-wrap">
                   Даты набора:
                   <span class="tours__data">
-                    <time datetime="15-07">15.07</time>–<time datetime="19-07">19.07</time>
+                    <time datetime="07-15">15.07</time>–<time datetime="07-19">19.07</time>
                   </span>
                 </p>
 
@@ -385,7 +383,7 @@
                 <p class="tours__data-wrap">
                   Даты набора:
                   <span class="tours__data">
-                    <time datetime="12-07">12.07</time>–<time datetime="19-07">19.07</time>
+                    <time datetime="07-12">12.07</time>–<time datetime="07-19">19.07</time>
                   </span>
                 </p>
 
@@ -395,10 +393,6 @@
               </div>
             </div>
           </li>
-
-
-
-
         </ul>
       </div>
 
@@ -407,8 +401,68 @@
       </div>
     </section>
 
-    <section class="training" data-test="training">
-      <h2 class="title" data-shadow="Обучение">Обучение</h2>
+    <section class="training container" data-test="training">
+      <h2 class="training__title title" data-shadow="Обучение">Обучение</h2>
+      <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа,
+        Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+
+      <div>
+        <h2 class="training__instructors">Наши инструкторы</h2>
+        <div class="button-swiper">
+          <div class="training__button-prev swiper-button"></div>
+          <div class="training__button-next swiper-button"></div>
+        </div>
+
+        <div class="training__swiper swiper">
+          <ul class="training__swiper swiper-wrapper">
+            <li class="training__slide swiper-slide">
+              <picture>
+                <source type="image/webp" width="260" height="200"
+                  srcset="./img/training/training-3.webp 1x, ./img/training/training-3@2x.webp 2x">
+                <img class="training__img" src="./img/training/training-3.jpg" srcset="./img/training/training-3@2x.jpg"
+                  width="260" height="200" alt="Надежда Колесниченко.">
+              </picture>
+              <div class="training__content">
+                <h3>Надежда Колесниченко</h3>
+                  <a class="training__vk-link" href="#">
+                    <span class="visually-hidden">Открыть страницу в контакте.</span>
+                    <svg class="training__icon" width="16" height="9">
+                      <use href="/__spritemap#sprite-vk"></use>
+                    </svg>
+                  </a>
+              </div>
+              <p>Участники говорят, что Надежда ответственная, приятная в общении,
+                и в поездках с ней чувствуешь себя
+                спокойно и уверенно.</p>
+            </li>
+
+            <li class="training__slide swiper-slide">
+              <picture>
+                <source type="image/webp" width="260" height="200"
+                  srcset="./img/training/training-3.webp 1x, ./img/training/training-3@2x.webp 2x">
+                <img class="training__img" src="./img/training/training-3.jpg" srcset="./img/training/training-3@2x.jpg"
+                  width="260" height="200" alt="Надежда Колесниченко.">
+              </picture>
+              <div class="training__content">
+                <h3>Надежда Колесниченко</h3>
+                  <a class="training__vk-link" href="#">
+                    <span class="visually-hidden">Открыть страницу в контакте.</span>
+                    <svg class="training__icon" width="16" height="9">
+                      <use href="/__spritemap#sprite-vk"></use>
+                    </svg>
+                  </a>
+              </div>
+              <p>Участники говорят, что Надежда ответственная, приятная в общении,
+                и в поездках с ней чувствуешь себя
+                спокойно и уверенно.</p>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+
     </section>
 
     <section class="about" data-test="about">

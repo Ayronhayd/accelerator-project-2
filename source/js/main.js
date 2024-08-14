@@ -48,9 +48,33 @@ const swiperTours = new Swiper('.tours__swiper', {
     1440: {
       slidesPerView: 3,
       spaceBetween: 30,
-
     }
   },
 });
 
 swiperTours.update();
+
+const swiperTraining = new Swiper('.training__swiper', {
+  modules: [Navigation],
+  loop: false,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.training__button-next',
+    prevEl: '.training__button-prev',
+  },
+
+  breakpoints: {
+    320: {
+      // initialSlide: 3,
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1440: {
+      slidesPerView: 4,
+    }
+  },
+});
+
+swiperTraining.update();
