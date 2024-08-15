@@ -15,6 +15,11 @@
       line-height: 24px;
       margin-bottom: 30px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 335px;
+      margin-bottom: 62px;
+    }
   }
 }
 
@@ -24,7 +29,12 @@
   @media (min-width: $tablet-width) {
     margin: 19px 0 34px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+  }
 }
+
 
 .training__instructors {
   font-family: $font-800;
@@ -44,6 +54,24 @@
   @media (min-width: $desktop-width) {
     font-size: 35px;
     line-height: 35px;
+    margin-bottom: 16px;
+  }
+}
+
+.training__button-wrap {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 4px;
+    position: absolute;
+    right: 45px;
+    top: 197px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 120px;
+    top: 212px;
   }
 }
 
@@ -52,7 +80,11 @@
   padding: 14px;
 
   @media (min-width: $tablet-width) {
-    min-height: 385px;
+    min-height: 388px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 356px;
   }
 
   p {
@@ -80,6 +112,10 @@
   @media (min-width: $tablet-width) {
     width: 678px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .training__content {
@@ -106,11 +142,39 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: $icon-basic;
+
+  &:hover {
+    border-color: $color-basic;
+  }
+
+  &:focus-visible {
+    border-color: transparent;
+    outline: none;
+  }
+
+  &:active {
+    color: $icon-dark-bg;
+    background-color: $icon-two;
+    border-color: transparent;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 24px;
+  }
 }
 
+.training__vk-link-disabled {
+  color: rgba($color-basic, 0.3);
+  border-color: rgba($color-basic, 0.3);
+  pointer-events: none;
+}
 
 .training__icon {
   width: 16px;
   height: 9px;
-  color: $icon-basic;
 }

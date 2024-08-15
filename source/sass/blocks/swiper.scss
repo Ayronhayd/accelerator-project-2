@@ -15,22 +15,6 @@
   background-color: $color-white;
 }
 
-.button-swiper {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    position: absolute;
-    right: 45px;
-    top: 60px;
-  }
-
-  @media (min-width: $desktop-width) {
-    right: 120px;
-    top: 120px;
-  }
-}
-
 .swiper-button {
   width: 37px;
   height: 35px;
@@ -58,7 +42,7 @@
     }
   }
 
-  &:focus {
+  &:focus-visible {
     border: 1px solid transparent;
     background-color: $color-white;
     outline: none;
@@ -78,7 +62,7 @@
   }
 }
 
-.tours__button-next {
+.swiper__button-next {
   transform: scaleX(-1);
 }
 

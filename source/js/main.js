@@ -15,11 +15,9 @@ magicLink.forEach((btn) => {
 // swiper
 const swiperHero = new Swiper('.hero__swiper', {
   modules: [Pagination],
-  // Optional parameters
   loop: true,
   slidesPerView: 1,
 
-  // If we need pagination
   pagination: {
     el: '.hero__pagination',
     clickable: true,

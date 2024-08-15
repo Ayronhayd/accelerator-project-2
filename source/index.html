@@ -178,11 +178,11 @@
 
     <section class="tours container" data-test="tours">
       <h2 class="tours__title title" data-shadow="Ближайшие туры">Ближайшие туры</h2>
-      <div class="button-swiper">
-        <button class="tours__button-prev swiper-button" type="button">
+      <div class="tours__button-wrap">
+        <button class="tours__button-prev swiper__button-prev swiper-button" type="button" tabindex="0">
           <span class="visually-hidden">Слайдер-назад</span>
         </button>
-        <button class="tours__button-next swiper-button" type="button">
+        <button class="tours__button-next swiper__button-next swiper-button" type="button" tabindex="0">
           <span class="visually-hidden">Слайдер-вперед</span>
         </button>
       </div>
@@ -220,11 +220,11 @@
               <div class="tours__card-wrapper-2">
                 <p class="tours__stars">Сложность:
                   <span class="tours__star">
-                    <span class="full-star"></span>
-                    <span class="full-star"></span>
-                    <span class="full-star"></span>
-                    <span class="full-star"></span>
-                    <span class="empty-star"></span>
+                    <span class="tours__full-star"></span>
+                    <span class="tours__full-star"></span>
+                    <span class="tours__full-star"></span>
+                    <span class="tours__full-star"></span>
+                    <span class="tours__empty-star"></span>
                   </span>
                 </p>
 
@@ -274,11 +274,11 @@
               <div class="tours__card-wrapper-2">
                 <p class="tours__stars">Сложность:
                   <span class="tours__star">
-                    <span class="full-star"></span>
-                    <span class="full-star"></span>
-                    <span class="full-star"></span>
-                    <span class="empty-star"></span>
-                    <span class="empty-star"></span>
+                    <span class="tours__full-star"></span>
+                    <span class="tours__full-star"></span>
+                    <span class="tours__full-star"></span>
+                    <span class="tours__empty-star"></span>
+                    <span class="tours__empty-star"></span>
                   </span>
                 </p>
 
@@ -296,7 +296,7 @@
             </div>
           </li>
 
-          <li class="tours__slide swiper-slide">
+          <li class="tours__slide swiper-slide">tours__
             <picture>
               <source type="image/webp" width="380" height="416" media="(min-width: 1440px)"
                 srcset="./img//tours/tours-desctop-3.webp 1x, ./img//tours/tours-desctop-3@2x.webp 2x">
@@ -323,11 +323,11 @@
               <div class="tours__card-wrapper-2">
                 <p class="tours__stars">Сложность:
                   <span class="tours__star">
-                    <span class="full-star"></span>
-                    <span class="full-star"></span>
-                    <span class="full-star"></span>
-                    <span class="full-star"></span>
-                    <span class="empty-star"></span>
+                    <span class="tours__full-star"></span>
+                    <span class="tours__full-star"></span>
+                    <span class="tours__full-star"></span>
+                    <span class="tours__full-star"></span>
+                    <span class="tours__empty-star"></span>
                   </span>
                 </p>
 
@@ -372,11 +372,11 @@
               <div class="tours__card-wrapper-2">
                 <p class="tours__stars">Сложность:
                   <span class="tours__star">
-                    <span class="full-star"></span>
-                    <span class="full-star"></span>
-                    <span class="full-star"></span>
-                    <span class="full-star"></span>
-                    <span class="full-star"></span>
+                    <span class="tours__full-star"></span>
+                    <span class="tours__full-star"></span>
+                    <span class="tours__full-star"></span>
+                    <span class="tours__full-star"></span>
+                    <span class="tours__full-star"></span>
                   </span>
                 </p>
 
@@ -403,120 +403,153 @@
 
     <section class="training container" data-test="training">
       <h2 class="training__title title" data-shadow="Обучение">Обучение</h2>
-      <p>Обучение проводится квалифицированными специалистами,<br> за плечами которых десятки пройденных маршрутов Кавказа,
+      <p>Обучение проводится квалифицированными специалистами, за&nbsp;плечами&nbsp;которых десятки пройденных маршрутов
+        Кавказа,
         Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
 
 
-        <h2 class="training__instructors">Наши инструкторы</h2>
-        <div class="button-swiper">
-          <div class="training__button-prev swiper-button"></div>
-          <div class="training__button-next swiper-button"></div>
-        </div>
+      <h2 class="training__instructors">Наши инструкторы</h2>
+      <div class="training__button-wrap">
+        <button class="training__button-prev swiper__button-prev swiper-button" type="button" tabindex="0">
+          <span class="visually-hidden">Слайдер-назад</span>
+        </button>
+        <button class="training__button-next swiper__button-next swiper-button" type="button" tabindex="0">
+          <span class="visually-hidden">Слайдер-вперед</span>
+        </button>
+      </div>
 
-        <div class="training__swiper swiper">
-          <ul class="training__swiper swiper-wrapper">
-            <li class="training__slide swiper-slide">
-              <picture>
-                <source type="image/webp" width="260" height="200"
-                  srcset="./img/training/training-1.webp 1x, ./img/training/training-1@2x.webp 2x">
-                <img class="training__img" src="./img/training/training-1.jpg" srcset="./img/training/training-1@2x.jpg"
-                  width="260" height="200" alt="Александр Прокофьев.">
-              </picture>
-              <div class="training__content">
-                <h3>Александр Прокофьев</h3>
-                <a class="training__vk-link" href="#">
-                  <span class="visually-hidden">Открыть страницу в контакте.</span>
-                  <svg class="training__icon" width="16" height="9">
-                    <use href="/__spritemap#sprite-vk"></use>
-                  </svg>
-                </a>
-              </div>
-              <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
-            </li>
+      <div class="training__swiper swiper">
+        <ul class="training__swiper swiper-wrapper">
+          <li class="training__slide swiper-slide">
+            <picture>
+              <source type="image/webp" width="255" height="200" media="(min-width: 1440px)"
+                srcset="./img/training/training-desctop-1.webp 1x, ./img/training/training-desctop-1@2x.webp 2x">
+              <source type="image/webp" width="260" height="200"
+                srcset="./img/training/training-1.webp 1x, ./img/training/training-1@2x.webp 2x">
 
-            <li class="training__slide swiper-slide">
-              <picture>
-                <source type="image/webp" width="260" height="200"
-                  srcset="./img/training/training-2.webp 1x, ./img/training/training-2@2x.webp 2x">
-                <img class="training__img" src="./img/training/training-2.jpg" srcset="./img/training/training-2@2x.jpg"
-                  width="260" height="200" alt="Светлана Афиногенова.">
-              </picture>
-              <div class="training__content">
-                <h3>Светлана Афиногенова</h3>
-                <a class="training__vk-link" href="#">
-                  <span class="visually-hidden">Открыть страницу в контакте.</span>
-                  <svg class="training__icon" width="16" height="9">
-                    <use href="/__spritemap#sprite-vk"></use>
-                  </svg>
-                </a>
-              </div>
-              <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать —
-                в этом назначение жизни.</p>
-            </li>
+              <source type="image/jpeg" width="255" height="200" media="(min-width: 1440px)"
+                srcset="./img/training/training-desctop-1.jpg 1x, ./img/training/training-desctop-1@2x.jpg 2x">
+              <img class="training__img" src="./img/training/training-1.jpg" srcset="./img/training/training-1@2x.jpg"
+                width="260" height="200" alt="Александр Прокофьев.">
+            </picture>
+            <div class="training__content">
+              <h3>Александр <br> Прокофьев</h3>
+              <a class="training__vk-link" href="#">
+                <span class="visually-hidden">Открыть страницу в контакте.</span>
+                <svg class="training__icon" width="16" height="9">
+                  <use href="/__spritemap#sprite-vk"></use>
+                </svg>
+              </a>
+            </div>
+            <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+          </li>
 
-            <li class="training__slide swiper-slide">
-              <picture>
-                <source type="image/webp" width="260" height="200"
-                  srcset="./img/training/training-3.webp 1x, ./img/training/training-3@2x.webp 2x">
-                <img class="training__img" src="./img/training/training-3.jpg" srcset="./img/training/training-3@2x.jpg"
-                  width="260" height="200" alt="Надежда Колесниченко.">
-              </picture>
-              <div class="training__content">
-                <h3>Надежда Колесниченко</h3>
-                <a class="training__vk-link" href="#">
-                  <span class="visually-hidden">Открыть страницу в контакте.</span>
-                  <svg class="training__icon" width="16" height="9">
-                    <use href="/__spritemap#sprite-vk"></use>
-                  </svg>
-                </a>
-              </div>
-              <p>Участники говорят, что Надежда ответственная, приятная в общении,
-                и в поездках с ней чувствуешь себя
-                спокойно и уверенно.</p>
-            </li>
+          <li class="training__slide swiper-slide">
+            <picture>
+              <source type="image/webp" width="255" height="200" media="(min-width: 1440px)"
+                srcset="./img/training/training-desctop-2.webp 1x, ./img/training/training-desctop-2@2x.webp 2x">
+              <source type="image/webp" width="260" height="200"
+                srcset="./img/training/training-2.webp 1x, ./img/training/training-2@2x.webp 2x">
 
-            <li class="training__slide swiper-slide">
-              <picture>
-                <source type="image/webp" width="260" height="200"
-                  srcset="./img/training/training-4.webp 1x, ./img/training/training-4@2x.webp 2x">
-                <img class="training__img" src="./img/training/training-4.jpg" srcset="./img/training/training-4@2x.jpg"
-                  width="260" height="200" alt="Федор Кайгородов.">
-              </picture>
-              <div class="training__content">
-                <h3>Федор Кайгородов</h3>
-                <a class="training__vk-link" href="#">
-                  <span class="visually-hidden">Открыть страницу в контакте.</span>
-                  <svg class="training__icon" width="16" height="9">
-                    <use href="/__spritemap#sprite-vk"></use>
-                  </svg>
-                </a>
-              </div>
-              <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много
-                путешествует по Европе.</p>
-            </li>
+              <source type="image/jpeg" width="255" height="200" media="(min-width: 1440px)"
+                srcset="./img/training/training-desctop-2.jpg 1x, ./img/training/training-desctop-2@2x.jpg 2x">
+              <img class="training__img" src="./img/training/training-2.jpg" srcset="./img/training/training-2@2x.jpg"
+                width="260" height="200" alt="Светлана Афиногенова.">
+            </picture>
+            <div class="training__content">
+              <h3>Светлана <br> Афиногенова</h3>
+              <a class="training__vk-link" href="#">
+                <span class="visually-hidden">Открыть страницу в контакте.</span>
+                <svg class="training__icon" width="16" height="9">
+                  <use href="/__spritemap#sprite-vk"></use>
+                </svg>
+              </a>
+            </div>
+            <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать —
+              в этом назначение жизни.</p>
+          </li>
 
-            <li class="training__slide swiper-slide">
-              <picture>
-                <source type="image/webp" width="260" height="200"
-                  srcset="./img/training/training-5.webp 1x, ./img/training/training-5@2x.webp 2x">
-                <img class="training__img" src="./img/training/training-5.jpg" srcset="./img/training/training-5@2x.jpg"
-                  width="260" height="200" alt="Даниэль Васнецов.">
-              </picture>
-              <div class="training__content">
-                <h3>Даниэль Васнецов</h3>
-                <a class="training__vk-link" href="#">
-                  <span class="visually-hidden">Открыть страницу в контакте.</span>
-                  <svg class="training__icon" width="16" height="9">
-                    <use href="/__spritemap#sprite-vk"></use>
-                  </svg>
-                </a>
-              </div>
-              <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
-            </li>
-          </ul>
-        </div>
+          <li class="training__slide swiper-slide">
+            <picture>
+              <source type="image/jpeg" width="255" height="200" media="(min-width: 1440px)"
+                srcset="./img/training/training-desctop-3.jpg 1x, ./img/training/training-desctop-3@2x.jpg 2x">
+              <source type="image/webp" width="183" height="200" media="(min-width: 768px)"
+                srcset="./img/training/training-tablet-3.webp 1x, ./img/training/training-tablet-3@2x.webp 2x">
+              <source type="image/webp" width="260" height="200"
+                srcset="./img/training/training-3.webp 1x, ./img/training/training-3@2x.webp 2x">
 
 
+              <source type="image/jpeg" width="255" height="200" media="(min-width: 1440px)"
+                srcset="./img/training/training-desctop-3.jpg 1x, ./img/training/training-desctop-3@2x.jpg 2x">
+              <source type="image/jpeg" width="183" height="200" media="(min-width: 768px)"
+                srcset="./img/training/training-tablet-3.jpg 1x, ./img/training/training-tablet-3@2x.jpg 2x">
+              <img class="training__img" src="./img/training/training-3.jpg" srcset="./img/training/training-3@2x.jpg"
+                width="260" height="200" alt="Надежда Колесниченко.">
+            </picture>
+            <div class="training__content">
+              <h3>Надежда <br> Колесниченко</h3>
+              <a class="training__vk-link" href="#">
+                <span class="visually-hidden">Открыть страницу в контакте.</span>
+                <svg class="training__icon" width="16" height="9">
+                  <use href="/__spritemap#sprite-vk"></use>
+                </svg>
+              </a>
+            </div>
+            <p>Участники говорят, что Надежда ответственная, приятная в общении,
+              и в поездках с ней чувствуешь себя
+              спокойно и уверенно.</p>
+          </li>
+
+          <li class="training__slide swiper-slide">
+            <picture>
+              <source type="image/webp" width="260" height="200"
+                srcset="./img/training/training-4.webp 1x, ./img/training/training-4@2x.webp 2x">
+              <img class="training__img" src="./img/training/training-4.jpg" srcset="./img/training/training-4@2x.jpg"
+                width="260" height="200" alt="Федор Кайгородов.">
+            </picture>
+            <div class="training__content">
+              <h3>Федор <br> Кайгородов</h3>
+              <a class="training__vk-link" href="#">
+                <span class="visually-hidden">Открыть страницу в контакте.</span>
+                <svg class="training__icon" width="16" height="9">
+                  <use href="/__spritemap#sprite-vk"></use>
+                </svg>
+              </a>
+            </div>
+            <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много
+              путешествует по Европе.</p>
+          </li>
+
+          <li class="training__slide swiper-slide">
+            <picture>
+              <source type="image/webp" width="260" height="200"
+                srcset="./img/training/training-5.webp 1x, ./img/training/training-5@2x.webp 2x">
+              <img class="training__img" src="./img/training/training-5.jpg" srcset="./img/training/training-5@2x.jpg"
+                width="260" height="200" alt="Даниэль Васнецов.">
+            </picture>
+            <div class="training__content">
+              <h3>Даниэль <br> Васнецов</h3>
+              <a class="training__vk-link" href="#">
+                <span class="visually-hidden">Открыть страницу в контакте.</span>
+                <svg class="training__icon" width="16" height="9">
+                  <use href="/__spritemap#sprite-vk"></use>
+                </svg>
+              </a>
+            </div>
+            <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Процесс обучения</h4>
+        <ul>
+          <li>Изучение спортивного туристского движения</li>
+          <li>Подготовка и техническое снаряжение в походах</li>
+          <li>Лекции по окружающей среде, экологии и гигиене</li>
+          <li>Разъяснение сложности горных препятствий</li>
+        </ul>
+      </div>
 
     </section>
 

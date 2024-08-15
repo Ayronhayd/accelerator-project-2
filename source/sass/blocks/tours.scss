@@ -25,6 +25,22 @@
   }
 }
 
+.tours__button-wrap {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    right: 45px;
+    top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 120px;
+    top: 120px;
+  }
+}
+
 .tours__swiper.swiper {
   width: 290px;
   padding-bottom: 25px;
@@ -221,7 +237,7 @@
   gap: 1px;
 }
 
-.full-star {
+.tours__full-star {
   mask-image: url("/__spritemap#sprite-full-star-view");
   mask-repeat: no-repeat;
   background-color: $color-white;
@@ -230,7 +246,7 @@
   display: block;
 }
 
-.empty-star {
+.tours__empty-star {
   mask-image: url("/__spritemap#sprite-empty-star-view");
   mask-repeat: no-repeat;
   background-color: $color-white;
