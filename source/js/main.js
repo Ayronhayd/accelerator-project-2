@@ -65,11 +65,12 @@ const swiperTraining = new Swiper('.training__swiper', {
 
   breakpoints: {
     320: {
-      // initialSlide: 3,
+      initialSlide: 2,
       slidesPerView: 1,
     },
     768: {
       slidesPerView: 3,
+      initialSlide: 0,
     },
     1440: {
       slidesPerView: 4,

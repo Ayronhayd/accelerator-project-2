@@ -1,23 +1,29 @@
 .training {
   color: $color-basic;
   padding-top: 20px;
+  position: relative;
 
   p {
     font-size: 14px;
     line-height: 20px;
     margin: 0;
     padding: 0;
-    padding-bottom: 29px;
+    margin-bottom: 29px;
 
     @media (min-width: $tablet-width) {
       font-size: 16px;
       line-height: 24px;
+      margin-bottom: 30px;
     }
   }
 }
 
 .training__title {
   margin: 17px 0 33px;
+
+  @media (min-width: $tablet-width) {
+    margin: 19px 0 34px;
+  }
 }
 
 .training__instructors {
@@ -27,11 +33,12 @@
   line-height: 22px;
   margin: 0;
   padding: 0;
-  padding-bottom: 22px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     font-size: 25px;
     line-height: 25px;
+    margin-bottom: 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,6 +50,10 @@
 .training__slide {
   border: 1px solid rgba($border, 0.1);
   padding: 14px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 385px;
+  }
 
   p {
     font-size: 12px;
@@ -59,11 +70,16 @@
   object-fit: cover;
 }
 
+
 .training__swiper {
   list-style: none;
   margin: 0;
   padding: 0;
   width: 290px;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+  }
 }
 
 .training__content {
