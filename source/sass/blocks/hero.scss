@@ -11,10 +11,18 @@
   width: 100%;
 }
 
+.hero__wrapper {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+
 .hero__slide {
   background-color: $bg-header;
   text-align: center;
-  position: relative;
+
   padding: 145px 15px 39px;
 
   @media (min-width: $tablet-width) {
@@ -27,6 +35,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 200px 120px 80px;
+    margin: 0 auto;
   }
 
   h3 {
