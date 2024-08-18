@@ -1,3 +1,13 @@
+.hero__wrapper {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero__swiper {
+  position: relative;
+}
+
 .hero__img {
   width: 100%;
   display: block;
@@ -11,13 +21,11 @@
   width: 100%;
 }
 
-.hero__wrapper {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
+.hero__conteiner {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
-
 
 .hero__slide {
   background-color: $bg-header;
@@ -35,7 +43,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 200px 120px 80px;
-    margin: 0 auto;
   }
 
   h3 {
@@ -105,7 +112,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: calc(88% - 51px);
+    left: 50%;
+    transform: translateX(459%);
     bottom: 92px;
   }
 }
@@ -122,7 +130,8 @@
 
   @media (min-width: $desktop-width) {
     bottom: calc(19% - 4px);
-    left: calc(63% + 3px);
+    left: 50%;
+    transform: translateX(calc(49% - 11px));
   }
 }
 
