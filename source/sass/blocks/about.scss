@@ -11,10 +11,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 660px 1fr;
+    display: flex;
     padding-top: 169px;
-    width: 1440px;
+    width: 1050px;
+    max-width: 1440px;
   }
 }
 
@@ -23,6 +23,8 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 114px;
+    position: absolute;
+    left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,10 +54,12 @@
     margin: 0;
     width: 270px;
     margin-right: 48px;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 585px;
+    margin-right: 0;
   }
 
   h2 {
