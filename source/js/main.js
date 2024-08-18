@@ -67,7 +67,7 @@ const swiperReviews = new Swiper('.reviews__swiper', {
 
     },
     1440: {
-      spaceBetween: 100,
+      spaceBetween: 82,
     },
   },
 });
