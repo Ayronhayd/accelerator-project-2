@@ -24,7 +24,6 @@ const swiperHero = new Swiper('.hero__swiper', {
     type: 'bullets'
   },
 });
-
 swiperHero.update();
 
 const swiperTours = new Swiper('.tours__swiper', {
@@ -49,13 +48,38 @@ const swiperTours = new Swiper('.tours__swiper', {
     }
   },
 });
-
 swiperTours.update();
 
-const swiperTraining = new Swiper('.training__swiper', {
+const swiperReviews = new Swiper('.reviews__swiper', {
   modules: [Navigation],
   loop: false,
+  slidesPerView: 'auto',
+  navigation: {
+    nextEl: '.reviews__button-next',
+    prevEl: '.reviews__button-prev',
+  },
+  breakpoints: {
+    320: {
+      initialSlide: 0,
+    },
+    768: {
+      spaceBetween: 0,
+
+    },
+    1440: {
+      spaceBetween: 100,
+    },
+  },
+});
+swiperReviews.update();
+
+
+// в этом коде есть какай-то ошибка. если ниже подключить другой слайдер  то он будет не работать
+const swiperTraining = new Swiper('.training__swiper', {
+  modules: [Navigation],
   spaceBetween: 20,
+  loop: false,
+
   navigation: {
     nextEl: '.training__button-next',
     prevEl: '.training__button-prev',
@@ -75,5 +99,4 @@ const swiperTraining = new Swiper('.training__swiper', {
     }
   },
 });
-
 swiperTraining.update();

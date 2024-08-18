@@ -1,41 +1,80 @@
 .reviews {
-  padding: 20px 15px;
-}
+  position: relative;
+  padding: 10px 5px;
 
-.reviews__swiper {
-  box-shadow: 0 0 20px 0 rgba($reviews-shadow, 0.1);
+  @media (min-width: $tablet-width) {
+    padding: 37px 30px;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 197px 0 0 110px;
+  }
 }
 
 .reviews__wrapper {
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+.reviews__slide.swiper-slide {
+  @media (min-width: $tablet-width) {
+    width: 595px;
+  }
+}
+
+.reviews__shadow {
+  box-shadow: 0 0 20px 0 rgba($reviews-shadow, 0.1);
   padding: 20px;
   padding-bottom: 16px;
+  margin: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 186px 1fr;
+    column-gap: 30px;
+    margin: 15px;
+  }
 }
 
 .reviews__title {
-  margin-bottom: 31px;
-}
+  margin: 10px 0 21px 10px;
 
-.reviews__wrap-img {
-  margin-bottom: 19px;
+  @media (min-width: $tablet-width) {
+    margin: 25px 15px 20px;
+  }
 }
 
 .reviews__img {
+  margin-bottom: 19px;
   display: block;
-  width: 250px;
-  height: 169px;
+
+  @media (min-width: $tablet-width) {
+    width: 186px;
+    height: 237px;
+    margin-bottom: 4px;
+  }
 }
 
 .reviews__content {
-  width: 250px;
-
   p {
     font-size: 12px;
     line-height: 18px;
     margin: 0;
     padding: 0;
     margin-bottom: 10px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 4px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 
   h3 {
@@ -47,6 +86,13 @@
     padding: 0;
     margin-top: 16px;
     margin-bottom: 2px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 13px;
+      line-height: 13px;
+      margin-top: 26px;
+      margin-bottom: 0;
+    }
   }
 
   small {
@@ -56,5 +102,22 @@
     line-height: 12px;
     margin: 0;
     padding: 0;
+  }
+}
+
+.reviews__button-wrap {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 4px;
+    position: absolute;
+    right: 45px;
+    top: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 120px;
+    top: 212px;
   }
 }
