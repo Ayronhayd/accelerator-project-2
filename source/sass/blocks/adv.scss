@@ -1,0 +1,88 @@
+.adv__title {
+  text-align: center;
+  margin: 19px 0 36px;
+}
+
+.adv__wrapper {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.adv__button-wrap {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 4px;
+    position: absolute;
+    right: 45px;
+    top: 62px;
+  }
+}
+
+
+.adv__slide-content {
+  position: relative;
+  border: 1px solid rgba($border, 0.1);
+  padding: 81px 10px 19px;
+  margin: 0 15px;
+  text-align: center;
+
+  h3 {
+    font-family: $font-600;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
+
+.adv__slide-content-shield::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  left: 50%;
+  transform: translate(-12px, 28px);
+  background-image: url("/__spritemap#sprite-shield-view");
+}
+
+.adv__slide-content-shield::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 42px;
+  height: 42px;
+  top: 0;
+  left: 50%;
+  transform: translate(-21px, 19px);
+  border: 1px solid $icon-two;
+}
+
