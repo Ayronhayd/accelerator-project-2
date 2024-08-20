@@ -2,7 +2,7 @@ import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 
-const initAdvSlider = () => {
+const activateAdvSlider = () => {
   const swiperAdv = new Swiper('.adv__swiper', {
     modules: [Navigation],
     enabled: false,
@@ -12,13 +12,13 @@ const initAdvSlider = () => {
       prevEl: '.adv__button-prev',
     },
 
-    // breakpoints: {
-    //   1440: {
-    //     enabled: true,
-    //   },
-    // },
+    breakpoints: {
+      1440: {
+        enabled: true,
+      },
+    },
   });
   swiperAdv.update();
 };
 
-export { initAdvSlider };
+export { activateAdvSlider };

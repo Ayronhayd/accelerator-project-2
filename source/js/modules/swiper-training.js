@@ -2,7 +2,7 @@ import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 
-const initTrainingSlider = () => {
+const activateTrainingSlider = () => {
   const swiperTraining = new Swiper('.training__swiper', {
     modules: [Navigation],
     spaceBetween: 20,
@@ -28,4 +28,4 @@ const initTrainingSlider = () => {
   swiperTraining.update();
 };
 
-export { initTrainingSlider };
+export { activateTrainingSlider };
