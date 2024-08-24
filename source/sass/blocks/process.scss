@@ -16,7 +16,7 @@
   font-weight: 700;
   line-height: 16px;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -96,7 +96,7 @@
   width: 260px;
   background-size: 25px 25px;
   background-repeat: no-repeat;
-  background-position: 29px 0;
+  background-position: 29px 1px;
 
   @media (min-width: $tablet-width) {
     padding-left: 35px;
@@ -170,7 +170,7 @@
   content: "";
   position: absolute;
   display: block;
-  bottom: 11px;
+  bottom: 10px;
   left: 0;
   border-radius: 50%;
   background-color: $border;
@@ -190,7 +190,7 @@
 }
 
 .process__list-map::before {
-  top: 11px;
+  top: 12px;
 
   @media (min-width: $desktop-width) {
     top: calc(100% + 2px);

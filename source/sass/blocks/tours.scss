@@ -308,7 +308,7 @@
     content: "";
     position: absolute;
     top: calc(50% - 7px);
-    right: 6px;
+    right: 4px;
     mask-image: url("/__spritemap#sprite-tour-arrow-view");
     mask-repeat: no-repeat;
     background-color: $color-basic;
@@ -320,6 +320,7 @@
       top: calc(50% - 8px);
       width: 15px;
       height: 14px;
+      right: 3px;
     }
   }
 

@@ -6,7 +6,7 @@ const activateAdvSlider = () => {
   const swiperAdv = new Swiper('.adv__swiper', {
     modules: [Navigation],
     enabled: false,
-    loop: false,
+
     navigation: {
       nextEl: '.adv__button-next',
       prevEl: '.adv__button-prev',
@@ -14,7 +14,13 @@ const activateAdvSlider = () => {
 
     breakpoints: {
       1440: {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
         enabled: true,
+        allowTouchMove: false,
+        loop: true,
+        // centeredSlides : true,
+        // slidesPerGroup: 2,
       },
     },
   });
