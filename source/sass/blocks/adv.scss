@@ -89,7 +89,7 @@
 .adv__slide-content {
   position: relative;
   border: 1px solid rgba($border, 0.1);
-  padding: 81px 10px 19px;
+  padding: 81px 9px 19px;
   margin: 0 15px;
   text-align: center;
 
@@ -138,6 +138,14 @@
       font-size: 14px;
       line-height: 22px;
     }
+  }
+}
+
+.adv__slide-content p > br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 

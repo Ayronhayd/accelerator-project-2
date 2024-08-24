@@ -416,7 +416,7 @@
       </div>
 
       <div class="training__swiper swiper">
-        <ul class="training__swiper swiper-wrapper">
+        <ul class="training__wrapper swiper-wrapper">
           <li class="training__slide swiper-slide">
             <picture>
               <source type="image/webp" width="255" height="200" media="(min-width: 1440px)"
@@ -743,7 +743,8 @@
             <div class="adv__slide-content adv__slide-content-crown">
               <h3>Экспертиза и знания</h3>
               <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности.
-                Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом
+                Это <br>гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться
+                опытом
                 без опасений.
               </p>
             </div>
@@ -783,18 +784,160 @@
       </div>
     </section>
 
-
     <section class="gallery" data-test="gallery">
-      <h2 class="title" data-shadow="Фотогалерея">Фотогалерея</h2>
-      <p>Добавляйте фото с хэштегом #лайфтур, а также отмечайте нас на фото.
+      <h2 class="gallery__title title" data-shadow="Фотогалерея">Фотогалерея</h2>
+      <p>Добавляйте фото с хэштегом #лайфтур, <br> а также отмечайте нас на фото.
         Лучшие фотографии украсят этот раздел нашего сайта.</p>
+
+      <div class="gallery__swiper swiper">
+
+        <div class="gallery__wrapper swiper-wrapper">
+
+          <div class="gallery__slide swiper-slide">
+            <picture>
+              <source type="image/webp" width="284" height="463" media="(min-width: 1440px)"
+                srcset="./img/gallery/gallery-1-desctop.webp 1x, ./img/gallery/gallery-1-desctop@2x.webp 2x">
+              <source type="image/webp" width="253" height="418" media="(min-width: 768px)"
+                srcset="./img/gallery/gallery-1-tablet.webp 1x, ./img/gallery/gallery-1-tablet@2x.webp 2x">
+              <source type="image/webp" width="157" height="266"
+                srcset="./img/gallery/gallery-1-mobil.webp 1x, ./img/gallery/gallery-1-mobil@2x.webp 2x">
+
+              <source type="image/jpeg" width="284" height="463" media="(min-width: 1440px)"
+                srcset="./img/gallery/gallery-1-desctop.jpg 1x, ./img/gallery/gallery-1-desctop@2x.jpg 2x">
+              <source type="image/jpeg" width="253" height="418" media="(min-width: 768px)"
+                srcset="./img/gallery/gallery-1-tablet.jpg 1x, ./img/gallery/gallery-1-tablet@2x.jpg 2x">
+              <img class="gallery__img" src="./img/gallery/gallery-1-mobil.jpg"
+                srcset="./img/gallery/gallery-1-mobil@2x.jpg" width="157" height="266" alt="Человек в горах.">
+            </picture>
+          </div>
+
+          <div class="gallery__slide swiper-slide">
+            <div class="gallery__img-mini">
+              <picture>
+                <source type="image/webp" width="284" height="233" media="(min-width: 1440px)"
+                  srcset="./img/gallery/gallery-2-desсtop.webp 1x, ./img/gallery/gallery-2-desсtop@2x.webp 2x">
+                <source type="image/webp" width="253" height="210" media="(min-width: 768px)"
+                  srcset="./img/gallery/gallery-2-tablet.webp 1x, ./img/gallery/gallery-2-tablet@2x.webp 2x">
+                <source type="image/webp" width="157" height="134"
+                  srcset="./img/gallery/gallery-2-mobil.webp 1x, ./img/gallery/gallery-2-mobil@2x.webp 2x">
+
+                <source type="image/jpeg" width="284" height="233" media="(min-width: 1440px)"
+                  srcset="./img/gallery/gallery-2-desctop.jpg 1x, ./img/gallery/gallery-2-desctop@2x.jpg 2x">
+                <source type="image/jpeg" width="253" height="210" media="(min-width: 768px)"
+                  srcset="./img/gallery/gallery-2-tablet.jpg 1x, ./img/gallery/gallery-2-tablet@2x.jpg 2x">
+                <img class="gallery__img-mini-top" src="./img/gallery/gallery-2-mobil.jpg"
+                  srcset="./img/gallery/gallery-2-mobil@2x.jpg" width="157" height="134" alt="Люди у костра.">
+              </picture>
+            </div>
+            <div class="gallery__img-mini">
+              <picture>
+                <source type="image/webp" width="284" height="233" media="(min-width: 1440px)"
+                  srcset="./img/gallery/gallery-3-desctop.webp 1x, ./img/gallery/gallery-3-desctop@2x.webp 2x">
+                <source type="image/webp" width="253" height="210" media="(min-width: 768px)"
+                  srcset="./img/gallery/gallery-3-tablet.webp 1x, ./img/gallery/gallery-3-tablet@2x.webp 2x">
+                <source type="image/webp" width="157" height="125"
+                  srcset="./img/gallery/gallery-3-mobil.webp 1x, ./img/gallery/gallery-3-mobil@2x.webp 2x">
+
+                <source type="image/jpeg" width="284" height="233" media="(min-width: 1440px)"
+                  srcset="./img/gallery/gallery-3-desctop.jpg 1x, ./img/gallery/gallery-3-desctop@2x.jpg 2x">
+                <source type="image/jpeg" width="253" height="210" media="(min-width: 768px)"
+                  srcset="./img/gallery/gallery-3-tablet.jpg 1x, ./img/gallery/gallery-3-tablet@2x.jpg 2x">
+                <img class="gallery__img-mini-bottom" src="./img/gallery/gallery-3-mobil.jpg"
+                  srcset="./img/gallery/gallery-3-mobil@2x.jpg" width="157" height="125" alt="В руке компас.">
+              </picture>
+            </div>
+          </div>
+
+          <div class="gallery__slide swiper-slide">
+            <picture>
+              <source type="image/webp" width="284" height="463" media="(min-width: 1440px)"
+                srcset="./img/gallery/gallery-4-desctop.webp 1x, ./img/gallery/gallery-4-desctop@2x.webp 2x">
+              <source type="image/webp" width="253" height="418" media="(min-width: 768px)"
+                srcset="./img/gallery/gallery-4-tablet.webp 1x, ./img/gallery/gallery-4-tablet@2x.webp 2x">
+              <source type="image/webp" width="157" height="266"
+                srcset="./img/gallery/gallery-4-tablet.webp 1x, ./img/gallery/gallery-4-tablet@2x.webp 2x">
+
+              <source type="image/jpeg" width="284" height="463" media="(min-width: 1440px)"
+                srcset="./img/gallery/gallery-4-desctop.jpg 1x, ./img/gallery/gallery-4-desctop@2x.jpg 2x">
+              <source type="image/jpeg" width="253" height="418" media="(min-width: 768px)"
+                srcset="./img/gallery/gallery-4-tablet.jpg 1x, ./img/gallery/gallery-4-tablet@2x.jpg 2x">
+              <img class="gallery__img" src="./img/gallery/gallery-4-tablet.jpg"
+                srcset="./img/gallery/gallery-4-tablet@2x.jpg" width="157" height="266" alt="Фролов Александр.">
+            </picture>
+          </div>
+
+          <div class="gallery__slide swiper-slide">
+            <div class="gallery__slide-mini">
+              <picture>
+                <source type="image/webp" width="157" height="134"
+                  srcset="./img/gallery/gallery-5-desctop.webp 1x, ./img/gallery/gallery-5-desctop@2x.webp 2x">
+                <img class="gallery__img-mini-top" src="./img/gallery/gallery-5-desctop.jpg"
+                  srcset="./img/gallery/gallery-5-desctop@2x.jpg" width="157" height="134" alt="Фролов Александр.">
+              </picture>
+            </div>
+            <div class="gallery__slide-mini">
+              <picture>
+                <source type="image/webp" width="284" height="463"
+                  srcset="./img/gallery/gallery-6-desctop.webp 1x, ./img/gallery/gallery-6-desctop@2x.webp 2x">
+                <img class="gallery__img-mini-bottom " src="./img/gallery/gallery-6-desctop.jpg"
+                  srcset="./img/gallery/gallery-6-desctop@2x.jpg" width="157" height="134" alt="Фролов Александр.">
+              </picture>
+            </div>
+          </div>
+
+          <div class="gallery__slide swiper-slide">
+            <picture>
+              <source type="image/webp" width="284" height="463" media="(min-width: 1440px)"
+                srcset="./img/gallery/gallery-7-desctop.webp 1x, ./img/gallery/gallery-7-desctop@2x.webp 2x">
+              <img class="gallery__img" src="./img/gallery/gallery-7-desctop.jpg"
+                srcset="./img/gallery/gallery-7-desctop@2x.jpg" width="157" height="266" alt="Фролов Александр.">
+            </picture>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+      <div class="gallery__button-wrap">
+        <button class="gallery__button-prev swiper__button-prev swiper-button" type="button" tabindex="0">
+          <span class="visually-hidden">Слайдер-назад</span>
+        </button>
+        <button class="gallery__button-next swiper__button-next swiper-button" type="button" tabindex="0">
+          <span class="visually-hidden">Слайдер-вперед</span>
+        </button>
+      </div>
     </section>
 
 
 
 
     <section class="form" data-test="form">
-      <h2 class="title title--white">Остались вопросы?</h2>
+      <div class="form__container">
+        <h2 class="form__title">Остались вопросы?</h2>
+        <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+        <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form__container">
+            <label class="form__label">
+              <span class="visually-hidden">Телефон</span>
+              <input class="form__input form__input--phone" name="phone" type="tel" placeholder="Телефон" required>
+              <span class="form__error form__error-phone">Tолько цифры</span>
+            </label>
+          </div>
+          <div class="form__container">
+            <label class="form__label">
+              <span class="visually-hidden">Email</span>
+              <input class="form__input form__input--name" name="name" type="text" placeholder="Имя" required>
+              <span class="form__error form__error-name">только буквы и пробелы</span>
+            </label>
+          </div>
+          <button class="form__button button" type="submit">Отправить</button>
+        </form>
+      </div>
     </section>
   </main>
 
