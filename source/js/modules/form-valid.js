@@ -14,10 +14,14 @@ const validateInput = (input, regex, error) => {
   return isValid;
 };
 
-form.addEventListener('submit', (e) => {
+
+const formValid = form.addEventListener('submit', (e) => {
   const nameValid = validateInput(nameInput, NAME_VALID, nameError);
   const phoneValid = phoneInput.value ? validateInput(phoneInput, PHONE_VALID, phoneError) : true;
   if (!nameValid || !phoneValid) {
     e.preventDefault();
   }
 });
+
+
+export { formValid };

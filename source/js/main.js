@@ -6,13 +6,16 @@ import { activateReviewsSlider } from './modules/swiper-reviews';
 import { activateAdvSlider } from './modules/swiper-adv';
 import { toggleSwiper } from './modules/toggle-swiper';
 import { activateGallerySlider } from './modules/swiper-gallery';
+import { formValid } from './modules/form-valid';
 
 closePressing();
 activateHeroSlider();
 activateToursSlider();
+activateTrainingSlider();
 activateReviewsSlider();
 activateAdvSlider();
 activateGallerySlider();
+formValid();
 
 
 onload = function() {
@@ -22,8 +25,3 @@ onload = function() {
 window.onresize = function() {
   toggleSwiper();
 };
-
-// не смог понять что с нижним пожключением слайдера не так если он подключен раньше других-
-// то все перестают работать
-
-activateTrainingSlider();
