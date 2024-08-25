@@ -26,11 +26,10 @@
   @media (min-width: $desktop-width) {
     padding: 296px 31px 292px;
     background-image:
-      image-set(
-        url("../../img/form/form-desktop.webp") type("image/webp") 1x,
-        url("../../img/form/form-desktop@2x.webp") type("image/webp") 2x,
-        url("../../img/form/form-desktop.jpg") type("image/jpeg") 1x,
-        url("../../img/form/form-desktop@2x.jpg") type("image/jpeg") 2x);
+      image-set(url("../../img/form/form-desktop.webp") type("image/webp") 1x,
+      url("../../img/form/form-desktop@2x.webp") type("image/webp") 2x,
+      url("../../img/form/form-desktop.jpg") type("image/jpeg") 1x,
+      url("../../img/form/form-desktop@2x.jpg") type("image/jpeg") 2x);
   }
 
 
@@ -74,6 +73,10 @@
   }
 }
 
+.form__container {
+  position: relative;
+}
+
 .form p > br {
   @media (min-width: $tablet-width) {
     display: none;
@@ -104,7 +107,62 @@
   @media (min-width: $desktop-width) {
     margin: 0;
   }
+
+  &:hover {
+    border-color: $border;
+  }
+
+  &:focus {
+    border-color: $color-basic;
+    outline: none;
+
+    &::placeholder {
+      color: $color-placeholder;
+    }
+  }
+
+  &:disabled {
+    background-color: $bg-color;
+    border-color: $color-disabled;
+    pointer-events: none;
+  }
 }
+
+.form__input::placeholder {
+  display: none;
+  color: transparent;
+}
+
+.form__label {
+  position: absolute;
+  z-index: 5;
+  color: $color-basic;
+  font-size: 16px;
+  line-height: 16px;
+  opacity: 0.5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-114px, -11px);
+
+  @media (min-width: $tablet-width) {
+    transform: translate(-150px, -14px);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(-150px, -8px);
+  }
+}
+
+.form__input:focus + .form__label {
+  display: none;
+  color: transparent;
+}
+
+.form__input:active + .form__label {
+  display: none;
+  color: transparent;
+}
+
 
 .form__button {
   margin: 0 auto;
@@ -119,4 +177,8 @@
     margin: 0;
     width: 180px;
   }
+}
+
+.form__input--error {
+  border: 1px solid $color-error;
 }

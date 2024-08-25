@@ -6,7 +6,6 @@ const phoneError = form.querySelector('.form__error-phone');
 const NAME_VALID = /^[a-zA-Zа-яА-ЯЁё\s]+$/;
 const PHONE_VALID = /^\+\d/;
 
-
 const validateInput = (input, regex, error) => {
   const isValid = regex.test(input.value);
   error.style.display = isValid ? 'none' : 'block';
@@ -14,14 +13,17 @@ const validateInput = (input, regex, error) => {
   return isValid;
 };
 
-
 const formValid = form.addEventListener('submit', (e) => {
   const nameValid = validateInput(nameInput, NAME_VALID, nameError);
-  const phoneValid = phoneInput.value ? validateInput(phoneInput, PHONE_VALID, phoneError) : true;
+  const phoneValid = phoneInput.value
+    ? validateInput(phoneInput, PHONE_VALID, phoneError)
+    : true;
   if (!nameValid || !phoneValid) {
     e.preventDefault();
   }
 });
 
-
 export { formValid };
+
+phoneInput.addEventListener('focus', () => phoneInput.classList.add('form__input--error'), true);
+phoneInput.addEventListener('blur', () => phoneInput.classList.remove('form__input--error'), true);
