@@ -1,0 +1,87 @@
+.contact {
+  padding: 0 15px;
+  width: 320px;
+  margin: 0 auto;
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 30px;
+    padding: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+.contact__title {
+  margin: 0 0 28px;
+}
+
+.contact__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.contact__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  font-family: $font-600;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+
+  padding-left: 32px;
+}
+
+.contact__item--tel::after,
+.contact__item--mail::after,
+.contact__item--addres::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+}
+
+.contact__item--tel::after {
+  background-color: $icon-basic;
+  mask-image: url("/__spritemap#sprite-phone-view");
+}
+
+.contact__item--mail::after {
+  background-color: $icon-basic;
+  mask-image: url("/__spritemap#sprite-mail-view");
+}
+
+.contact__item--addres::after {
+  background-color: $icon-basic;
+  mask-image: url("/__spritemap#sprite-pin-stroke-view");
+}
+
+.contact__link {
+  font-family: $font-400;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: $color-basic;
+  display: block;
+  margin-top: 8px;
+}
+
+.contact__img {
+  display: block;
+  width: 100%;
+  height: 343px;
+}

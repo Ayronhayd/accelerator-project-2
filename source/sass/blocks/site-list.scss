@@ -1,6 +1,7 @@
 .site-list {
   list-style: none;
   margin: 0;
+  padding: 0;
   flex-wrap: wrap;
 }
 
@@ -45,5 +46,40 @@
   &--disabled {
     color: $color-disabled;
     pointer-events: none;
+  }
+}
+
+.site-item--tours {
+  order: 1;
+}
+
+.site-item--training {
+  order: 3;
+}
+
+.site-item--about {
+  order: 5;
+}
+
+.site-item--reviews {
+  order: 2;
+}
+
+.site-item--gallery {
+  order: 4;
+}
+
+.site-item--contact {
+  order: 6;
+}
+
+.site-item--tours,
+.site-item--training,
+.site-item--about,
+.site-item--reviews,
+.site-item--gallery,
+.site-item--contact {
+  @media (min-width: $tablet-width) {
+    order: 0;
   }
 }
