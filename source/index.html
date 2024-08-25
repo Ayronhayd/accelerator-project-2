@@ -919,20 +919,19 @@
     <section class="form" data-test="form">
       <div class="form__container">
         <h2 class="form__title">Остались вопросы?</h2>
-        <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+        <p>Заполните форму и наш оператор свяжется<br> с вами для консультации.</p>
+
         <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="form__container">
             <label class="form__label">
               <span class="visually-hidden">Телефон</span>
-              <input class="form__input form__input--phone" name="phone" type="tel" placeholder="Телефон" required>
-              <span class="form__error form__error-phone">Tолько цифры</span>
+              <input class="form__input form__input--phone" name="phone" type="tel" placeholder="+7(000)-000-00-00" required>
             </label>
           </div>
           <div class="form__container">
             <label class="form__label">
               <span class="visually-hidden">Email</span>
-              <input class="form__input form__input--name" name="name" type="text" placeholder="Имя" required>
-              <span class="form__error form__error-name">только буквы и пробелы</span>
+              <input class="form__input form__input--email" name="email" type="email" placeholder="keks@gmail.ru" required>
             </label>
           </div>
           <button class="form__button button" type="submit">Отправить</button>
