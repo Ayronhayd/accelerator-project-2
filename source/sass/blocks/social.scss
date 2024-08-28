@@ -27,40 +27,55 @@
   width: 32px;
   height: 30px;
   position: relative;
-  border: 1px solid rgba($icon-basic, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .social__link {
+  border: 1px solid rgba($icon-basic, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 14px 15px;
   color: $icon-basic;
+
+  &:hover {
+    border-color: $color-basic;
+  }
+
+  &:focus-visible {
+    border-color: transparent;
+    outline: none;
+  }
+
+  &:active {
+    color: $icon-dark-bg;
+    background-color: $icon-two;
+    border-color: transparent;
+  }
 }
 
 .social__link-vk {
   position: absolute;
-  top: 10px;
+  top: 11px;
   left: 7px;
-  width: 17px;
+  width: 18px;
   height: 9px;
 }
 
 .social__link-ok {
   position: absolute;
-  top: 6px;
-  left: 9px;
+  top: 7px;
+  left: 10px;
   width: 11px;
   height: 16px;
 }
 
 .social__link-reddit {
   position: absolute;
-  top: 6px;
-  left: 7px;
+  top: 7px;
+  left: 8px;
   width: 16px;
   height: 15px;
 }
@@ -75,4 +90,23 @@
   font-weight: 300;
   line-height: 12px;
   color: $color-basic;
+
+  &:hover {
+    border-bottom: 1px solid $color-basic;
+  }
+
+  &:focus-visible {
+    border: 1px solid $color-basic;
+    outline: none;
+  }
+
+  &:active {
+    color: $button;
+    border: 1px solid transparent;
+  }
+
+  &--disabled {
+    color: $color-disabled;
+    pointer-events: none;
+  }
 }

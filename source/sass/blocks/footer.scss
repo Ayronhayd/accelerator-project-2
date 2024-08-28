@@ -89,7 +89,7 @@
   }
 }
 
-.footer--link {
+.footer__link {
   font-family: $font-400;
   font-size: 14px;
   font-weight: 400;
@@ -116,16 +116,21 @@
   }
 
   &:hover {
-    border-bottom: 1px solid $color-white;
+    border-bottom: 1px solid $color-basic;
   }
 
-  &:focus {
-    border: 1px solid $color-white;
+  &:focus-visible {
+    border: 1px solid $color-basic;
     outline: none;
   }
 
   &:active {
-    color: $button-extra;
+    color: $button;
     border: 1px solid transparent;
+  }
+
+  &--disabled {
+    color: $color-disabled;
+    pointer-events: none;
   }
 }

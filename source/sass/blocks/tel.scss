@@ -19,14 +19,13 @@
     opacity: 50%;
   }
 
-  &:focus {
+  &:focus-visible {
     color: $color-basic;
     outline: none;
   }
 
   &:active {
     color: $button-extra;
-    border: 1px solid transparent;
   }
 
   &--disabled {

@@ -94,6 +94,7 @@
 .training__slide {
   border: 1px solid rgba($border, 0.1);
   padding: 14px;
+  background-color: $bg-color;
 
   @media (min-width: $tablet-width) {
     min-height: 388px;

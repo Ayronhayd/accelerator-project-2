@@ -33,7 +33,7 @@
     border-bottom: 1px solid $color-white;
   }
 
-  &:focus {
+  &:focus-visible {
     border: 1px solid $color-white;
     outline: none;
   }
