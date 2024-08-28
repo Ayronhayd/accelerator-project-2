@@ -1,6 +1,6 @@
 .reviews {
   position: relative;
-  padding: 10px 5px 0;
+  padding: 0 5px;
 
   @media (min-width: $tablet-width) {
     padding: 37px 30px;
@@ -34,7 +34,7 @@
   box-shadow: 0 0 20px 0 rgba($reviews-shadow, 0.1);
   padding: 20px;
   padding-bottom: 16px;
-  margin: 10px 10px 0;
+  margin: 10px;
 
   @media (min-width: $tablet-width) {
     display: grid;
