@@ -6,17 +6,16 @@
     padding-top: 60px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
     width: 768px;
     padding-bottom: 43px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    padding-top: 167px;
-    width: 1050px;
+    width: 1440px;
+    padding: 145px 120px 180px 660px;
     max-width: 1440px;
-    padding-bottom: 180px;
   }
 }
 
@@ -62,6 +61,7 @@
   @media (min-width: $desktop-width) {
     width: 585px;
     margin-right: 0;
+    margin-left: 0;
   }
 
   h2 {
