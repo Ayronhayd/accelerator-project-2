@@ -3,11 +3,11 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-top: 86px;
+    padding-top: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 208px;
+    padding-top: 123px;
     max-width: 1440px;
     margin: 0 auto;
   }
@@ -149,7 +149,7 @@
     gap: 4px;
     position: absolute;
     right: 50%;
-    transform: translate(339px, 172px);
+    transform: translate(339px, 146px);
     top: 0;
   }
 

@@ -4,11 +4,11 @@
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 45px;
+    padding: 60px 45px 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 123px 120px;
+    padding: 123px 120px 100px;
   }
 }
 

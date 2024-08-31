@@ -1,16 +1,16 @@
 .reviews {
   position: relative;
-  padding: 0 5px;
+  padding: 37px 5px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 37px 30px;
+    padding: 34px 30px 25px;
     padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 176px 0 100px 110px;
+    padding: 125px 0 69px 110px;
   }
 }
 
@@ -34,7 +34,7 @@
   box-shadow: 0 0 20px 0 rgba($reviews-shadow, 0.1);
   padding: 20px;
   padding-bottom: 16px;
-  margin: 10px;
+  margin: 10px 10px 12px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -51,7 +51,7 @@
 }
 
 .reviews__title {
-  margin: 10px 0 21px 10px;
+  margin: 0 0 21px 10px;
 
   @media (min-width: $tablet-width) {
     margin: 25px 15px 20px;
@@ -139,12 +139,12 @@
     gap: 4px;
     position: absolute;
     right: 45px;
-    top: 62px;
+    top: 59px;
   }
 
   @media (min-width: $desktop-width) {
     right: 120px;
-    top: 196px;
+    top: 145px;
   }
 }
 
