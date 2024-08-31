@@ -6,6 +6,7 @@ import { activateReviewsSlider } from './modules/swiper-reviews';
 import { activateAdvSlider } from './modules/swiper-adv';
 import { toggleSwiper } from './modules/toggle-swiper';
 import { activateGallerySlider } from './modules/swiper-gallery';
+import { toggleMenu } from './modules/menu';
 import { formValid } from './modules/form-valid';
 
 closePressing();
@@ -15,7 +16,7 @@ activateTrainingSlider();
 activateReviewsSlider();
 activateAdvSlider();
 activateGallerySlider();
-formValid();
+toggleMenu();
 
 
 onload = function() {
@@ -25,3 +26,5 @@ onload = function() {
 window.onresize = function() {
   toggleSwiper();
 };
+
+formValid();

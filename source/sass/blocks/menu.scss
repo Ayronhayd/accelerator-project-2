@@ -5,14 +5,32 @@
   mask-image: url("/__spritemap#sprite-menu-view");
   mask-repeat: no-repeat;
   mask-position: center;
-  background-color: #ffffff;
+  background-color: $bg-color;
+  border: none;
 
   @media (min-width: $desktop-width) {
     display: none;
   }
+
+  &:hover {
+    background-color: rgba($bg-color, 0.5);
+  }
+
+  &:focus-visible {
+    outline: none;
+    background-color: $icon-basic;
+  }
+
+  &:active {
+    background-color: $button-extra;
+  }
+
+  &:disabled {
+    background-color: $color-disabled;
+  }
 }
 
-.menu__burger-checkbox:checked + .menu__burger {
+.menu__burger--js {
   mask-image: url("/__spritemap#sprite-cross-view");
 
   @media (min-width: $desktop-width) {
@@ -57,7 +75,7 @@
   }
 }
 
-.menu__burger-checkbox:checked ~ .menu-list {
+.menu__burger--js ~ .menu-list {
   display: block;
 
   @media (min-width: $desktop-width) {

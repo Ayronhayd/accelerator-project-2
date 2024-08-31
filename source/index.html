@@ -17,9 +17,11 @@
         aria-current="page" alt="Логотип.">
 
       <div class="header__menu menu">
-        <!-- через input легче и больше плюсов чем через button и js не нужен  -->
-        <input class="menu__burger-checkbox visually-hidden" type="checkbox" name="burger" id="burger-checkbox">
-        <label class="header__burger menu__burger" aria-label="меню" for="burger-checkbox"></label>
+        <button class="header__burger menu__burger" type="button" aria-label="Открыть меню.">
+        </button>
+
+        <!-- <input class="menu__burger-checkbox visually-hidden" type="checkbox" name="burger" id="burger-checkbox">
+        <label class="header__burger menu__burger" aria-label="меню" for="burger-checkbox"></label> -->
 
         <ul class="menu-list site-list">
           <li class="menu-item">
