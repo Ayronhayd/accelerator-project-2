@@ -157,3 +157,7 @@
     display: none;
   }
 }
+
+.gallery__button-next {
+  transform: scaleX(-1);
+}

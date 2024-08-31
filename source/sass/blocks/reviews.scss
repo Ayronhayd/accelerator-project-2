@@ -148,10 +148,13 @@
   }
 }
 
+.reviews__button-next {
+  transform: scaleX(-1);
+}
+
 .reviews__title[data-shadow]::after {
   @media (min-width: $desktop-width) {
     top: -40px;
     left: 20px;
   }
 }
-

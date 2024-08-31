@@ -41,6 +41,10 @@
   }
 }
 
+.tours__button-next {
+  transform: scaleX(-1);
+}
+
 .tours__swiper.swiper {
   width: 290px;
   padding-bottom: 25px;

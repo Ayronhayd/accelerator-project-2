@@ -17,11 +17,9 @@
         aria-current="page" alt="Логотип.">
 
       <div class="header__menu menu">
+
         <button class="header__burger menu__burger" type="button" aria-label="Открыть меню.">
         </button>
-
-        <!-- <input class="menu__burger-checkbox visually-hidden" type="checkbox" name="burger" id="burger-checkbox">
-        <label class="header__burger menu__burger" aria-label="меню" for="burger-checkbox"></label> -->
 
         <ul class="menu-list site-list">
           <li class="menu-item">
@@ -180,10 +178,10 @@
     <section class="tours container" data-test="tours" id="tours">
       <h2 class="tours__title title" data-shadow="Ближайшие туры">Ближайшие туры</h2>
       <div class="tours__button-wrap">
-        <button class="tours__button-prev swiper__button-prev swiper-button" type="button" tabindex="0">
+        <button class="tours__button-prev  swiper-button" type="button" tabindex="0">
           <span class="visually-hidden">Слайдер-назад</span>
         </button>
-        <button class="tours__button-next swiper__button-next swiper-button" type="button" tabindex="0">
+        <button class="tours__button-next  swiper-button" type="button" tabindex="0">
           <span class="visually-hidden">Слайдер-вперед</span>
         </button>
       </div>
@@ -409,10 +407,10 @@
         Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
       <h2 class="training__instructors">Наши инструкторы</h2>
       <div class="training__button-wrap">
-        <button class="training__button-prev swiper__button-prev swiper-button" type="button" tabindex="0">
+        <button class="training__button-prev swiper-button" type="button" tabindex="0">
           <span class="visually-hidden">Слайдер-назад</span>
         </button>
-        <button class="training__button-next swiper__button-next swiper-button" type="button" tabindex="0">
+        <button class="training__button-next swiper-button" type="button" tabindex="0">
           <span class="visually-hidden">Слайдер-вперед</span>
         </button>
       </div>
@@ -728,10 +726,10 @@
 
       </div>
       <div class="reviews__button-wrap">
-        <button class="reviews__button-prev swiper__button-prev swiper-button" type="button" tabindex="0">
+        <button class="reviews__button-prev swiper-button" type="button" tabindex="0">
           <span class="visually-hidden">Слайдер-назад</span>
         </button>
-        <button class="reviews__button-next swiper__button-next swiper-button" type="button" tabindex="0">
+        <button class="reviews__button-next swiper-button" type="button" tabindex="0">
           <span class="visually-hidden">Слайдер-вперед</span>
         </button>
       </div>
@@ -786,10 +784,10 @@
         </ul>
       </div>
       <div class="adv__button-wrap">
-        <button class="adv__button-prev swiper__button-prev swiper-button" type="button" tabindex="0">
+        <button class="adv__button-prev swiper-button" type="button" tabindex="0">
           <span class="visually-hidden">Слайдер-назад</span>
         </button>
-        <button class="adv__button-next swiper__button-next swiper-button" type="button" tabindex="0">
+        <button class="adv__button-next swiper-button" type="button" tabindex="0">
           <span class="visually-hidden">Слайдер-вперед</span>
         </button>
       </div>
@@ -904,21 +902,15 @@
                 srcset="./img/gallery/gallery-7-desctop@2x.jpg" width="157" height="266" alt="Фролов Александр.">
             </picture>
           </div>
-
-
-
         </div>
-
-
-
       </div>
 
 
       <div class="gallery__button-wrap">
-        <button class="gallery__button-prev swiper__button-prev swiper-button" type="button" tabindex="0">
+        <button class="gallery__button-prev swiper-button" type="button" tabindex="0">
           <span class="visually-hidden">Слайдер-назад</span>
         </button>
-        <button class="gallery__button-next swiper__button-next swiper-button" type="button" tabindex="0">
+        <button class="gallery__button-next swiper-button" type="button" tabindex="0">
           <span class="visually-hidden">Слайдер-вперед</span>
         </button>
       </div>
@@ -949,8 +941,8 @@
 
 
   <footer class="footer" data-test="footer" id="footer">
-    <div class="footer__conteiner">
-      <div class="footer__contact contact" id="contact">
+    <div class="footer__conteiner contact">
+      <div class="footer__contact contact__content" id="contact">
         <h2 class="contact__title title" data-shadow="Контакты">Контакты</h2>
         <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться
           увлекательными историями и подобрать для вас тур.</p>
@@ -993,32 +985,32 @@
 
     <div class="footer__nav">
 
-      <img class="footer__logo logo footer--logo" src="/__spritemap#sprite-footer-logo-view" width="142" height="42"
-        aria-current="page" alt="Логотип.">
-
-      <ul class="footer__list site-list">
-        <li class="footer__item site-item site-item--tours">
-          <a class="site-list__link footer__link" href="#tours">Туры</a>
-        </li>
-        <li class="footer__item site-item site-item--training">
-          <a class="site-list__link footer__link" href="#training">Обучение</a>
-        </li>
-        <li class="footer__item site-item site-item--about">
-          <a class="site-list__link footer__link" href="#about">О нас</a>
-        </li>
-        <li class="footer__item site-item site-item--reviews">
-          <a class="site-list__link footer__link" href="#reviews">Отзывы</a>
-        </li>
-        <li class="footer__item site-item site-item--gallery">
-          <a class="site-list__link footer__link" href="#gallery">Фотографии</a>
-        </li>
-        <li class="footer__item site-item site-item--contact">
-          <a class="site-list__link footer__link" href="#contact">Контакты</a>
-        </li>
-      </ul>
-
-      <div class="footer__tel tel">
-        <a class="tel__link" href="tel:+78007253232">8 800 725-32-32</a>
+      <div class="footer__nav-conteiner">
+        <img class="footer__logo logo" src="/__spritemap#sprite-footer-logo-view" width="142" height="42"
+          aria-current="page" alt="Логотип.">
+        <ul class="footer__list site-list">
+          <li class="footer__item site-item site-item--tours">
+            <a class="site-list__link footer__link" href="#tours">Туры</a>
+          </li>
+          <li class="footer__item site-item site-item--training">
+            <a class="site-list__link footer__link" href="#training">Обучение</a>
+          </li>
+          <li class="footer__item site-item site-item--about">
+            <a class="site-list__link footer__link" href="#about">О нас</a>
+          </li>
+          <li class="footer__item site-item site-item--reviews">
+            <a class="site-list__link footer__link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="footer__item site-item site-item--gallery">
+            <a class="site-list__link footer__link" href="#gallery">Фотографии</a>
+          </li>
+          <li class="footer__item site-item site-item--contact">
+            <a class="site-list__link footer__link" href="#contact">Контакты</a>
+          </li>
+        </ul>
+        <div class="footer__tel tel">
+          <a class="tel__link" href="tel:+78007253232">8 800 725-32-32</a>
+        </div>
       </div>
     </div>
 

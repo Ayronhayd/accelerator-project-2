@@ -97,6 +97,11 @@
   }
 }
 
+.training__button-next {
+  transform: scaleX(-1);
+}
+
+
 .training__slide {
   border: 1px solid rgba($border, 0.1);
   padding: 14px;
