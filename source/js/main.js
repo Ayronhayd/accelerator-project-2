@@ -1,5 +1,4 @@
-import { toggleMenu } from './modules/menu';
-import { closePressing } from './modules/close-pressing';
+import { toggleMenu, closePressing } from './modules/menu';
 import { activateHeroSlider } from './modules/swiper-hero';
 import { activateToursSlider } from './modules/swiper-tours';
 import { activateTrainingSlider } from './modules/swiper-training';
