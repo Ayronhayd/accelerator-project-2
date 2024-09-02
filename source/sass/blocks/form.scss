@@ -1,5 +1,4 @@
 .form {
-  background-color: $bg-header;
   color: $color-white;
   text-align: center;
 
@@ -15,7 +14,7 @@
     url("../../img/form/form-mobil@2x.jpg") 2x type("image/jpeg"));
 
   @media (min-width: $tablet-width) {
-    padding: 187px 31px 184px;
+    padding: 186px 31px 183px;
     background-image:
       image-set(url("../../img/form/form-tablet.webp") type("image/webp") 1x,
       url("../../img/form/form-tablet@2x.webp") type("image/webp") 2x,
@@ -24,7 +23,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 296px 31px 293px;
+    padding: 296px 31px 292px;
     background-image:
       image-set(url("../../img/form/form-desktop.webp") type("image/webp") 1x,
       url("../../img/form/form-desktop@2x.webp") type("image/webp") 2x,
@@ -44,7 +43,7 @@
     @media (min-width: $tablet-width) {
       font-size: 25px;
       line-height: 25px;
-      margin: 0 0 22px;
+      margin: 0 0 23px;
     }
 
     @media (min-width: $desktop-width) {
@@ -64,11 +63,11 @@
       font-size: 16px;
       line-height: 24px;
       padding: 0 180px;
-      margin: 0 0 25px;
+      margin: 0 0 24px;
     }
 
     @media (min-width: $desktop-width) {
-      margin: 0 0 39px;
+      margin: 0 0 38px;
     }
   }
 }
@@ -100,8 +99,8 @@
 
   @media (min-width: $tablet-width) {
     width: 360px;
-    padding: 20px 30px 17px;
-    margin-bottom: 12px;
+    padding: 20px 30px 18px;
+    margin-bottom: 11px;
   }
 
   @media (min-width: $desktop-width) {
@@ -177,7 +176,7 @@ input:not(:placeholder-shown) + label {
 
   @media (min-width: $tablet-width) {
     width: 360px;
-    padding: 20px 20px 17px;
+    padding: 20px 20px 19px;
   }
 
   @media (min-width: $desktop-width) {
