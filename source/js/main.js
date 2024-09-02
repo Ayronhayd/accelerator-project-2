@@ -7,7 +7,7 @@ import { activateAdvSlider } from './modules/swiper-adv';
 import { toggleSwiper } from './modules/toggle-swiper';
 import { activateGallerySlider } from './modules/swiper-gallery';
 import { toggleMenu } from './modules/menu';
-import { formValid } from './modules/form-valid';
+
 
 closePressing();
 activateHeroSlider();
@@ -27,4 +27,3 @@ window.onresize = function() {
   toggleSwiper();
 };
 
-formValid();

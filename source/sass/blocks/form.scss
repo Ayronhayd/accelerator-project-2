@@ -153,14 +153,20 @@
   }
 }
 
-.form__input:focus + .form__label {
+input:focus + label,
+input:not(:placeholder-shown) + label {
   display: none;
-  color: transparent;
 }
 
-.form__input:active + .form__label {
+
+.form__input:focus + label,
+.form__input:required:valid + label {
   display: none;
-  color: transparent;
+}
+
+.form__label:focus + label,
+.form__label:required:valid + label {
+  display: none;
 }
 
 
