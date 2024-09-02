@@ -1,10 +1,10 @@
 const listLink = document.querySelectorAll('.site-list__link');
-const checkbox = document.querySelector('.menu__burger-checkbox');
+const buttonBurger = document.querySelector('.menu__burger');
 
 const closePressing = () => {
   listLink.forEach((btn) => {
     btn.addEventListener('click', () => {
-      checkbox.click();
+      buttonBurger.classList.remove('menu__burger--js');
     });
   });
 };

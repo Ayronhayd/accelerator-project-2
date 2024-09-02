@@ -1,3 +1,4 @@
+import { toggleMenu } from './modules/menu';
 import { closePressing } from './modules/close-pressing';
 import { activateHeroSlider } from './modules/swiper-hero';
 import { activateToursSlider } from './modules/swiper-tours';
@@ -6,9 +7,10 @@ import { activateReviewsSlider } from './modules/swiper-reviews';
 import { activateAdvSlider } from './modules/swiper-adv';
 import { toggleSwiper } from './modules/toggle-swiper';
 import { activateGallerySlider } from './modules/swiper-gallery';
-import { toggleMenu } from './modules/menu';
+import { formValid } from './modules/form-valid';
 
 
+toggleMenu();
 closePressing();
 activateHeroSlider();
 activateToursSlider();
@@ -16,8 +18,7 @@ activateTrainingSlider();
 activateReviewsSlider();
 activateAdvSlider();
 activateGallerySlider();
-toggleMenu();
-
+formValid();
 
 onload = function() {
   toggleSwiper();
@@ -26,4 +27,3 @@ onload = function() {
 window.onresize = function() {
   toggleSwiper();
 };
-
