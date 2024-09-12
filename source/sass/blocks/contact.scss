@@ -79,7 +79,6 @@
   flex-direction: column;
   position: relative;
 
-  font-family: $font-600;
   font-size: 14px;
   font-weight: 600;
   line-height: 14px;
@@ -162,7 +161,6 @@
 }
 
 .contact__link {
-  font-family: $font-400;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -206,7 +204,32 @@
   }
 }
 
-.contact__link br {
+.contact__link--addres {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: $color-basic;
+  display: block;
+  margin-top: 7px;
+  border: 1px solid transparent;
+  width: max-content;
+  margin-left: -1px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 9px;
+  }
+}
+
+.contact__link--addres br {
   @media (min-width: $tablet-width) {
     display: none;
   }

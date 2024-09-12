@@ -69,7 +69,6 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    font-family: $font-600;
     font-size: 18px;
     font-weight: 600;
     line-height: 18px;
@@ -100,7 +99,6 @@
 }
 
 .footer__link {
-  font-family: $font-400;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
@@ -115,7 +113,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-family: $font-400;
     font-weight: 400;
     letter-spacing: 0;
     text-transform: none;

@@ -46,7 +46,6 @@
   }
 
   h3 {
-    font-family: $font-800;
     font-size: 26px;
     font-weight: 800;
     line-height: 26px;
@@ -69,7 +68,6 @@
   }
 
   p {
-    font-family: $font-400;
     font-size: 15px;
     font-weight: 400;
     line-height: 20px;
@@ -193,7 +191,6 @@
 
 .hero__info-item {
   @media (min-width: $desktop-width) {
-    font-family: $font-400;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;

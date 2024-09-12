@@ -1,6 +1,7 @@
 .form {
   color: $color-white;
   text-align: center;
+  background-color: $bg-header;
 
   margin-top: 3px;
   padding: 177px 31px 174px;
@@ -33,7 +34,6 @@
 
 
   h2 {
-    font-family: $font-800;
     font-size: 22px;
     font-weight: 800;
     line-height: 22px;

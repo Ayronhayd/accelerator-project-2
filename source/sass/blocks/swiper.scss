@@ -36,6 +36,7 @@
   border: 1px solid transparent;
   background-color: $button;
   position: relative;
+  cursor: pointer;
 
   &::after {
     content: "";
@@ -83,6 +84,7 @@
 .swiper-button-disabled:active {
   background-color: $color-disabled;
   border-color: $color-disabled;
+  cursor: default;
 
   &::after {
     background-color: $color-white;

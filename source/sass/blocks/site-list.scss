@@ -17,7 +17,6 @@
 }
 
 .site-list__link {
-  font-family: $font-700;
   font-size: 14px;
   font-weight: 700;
   line-height: 14px;
@@ -34,7 +33,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-family: $font-400;
     font-weight: 400;
     letter-spacing: 0;
     text-transform: none;
